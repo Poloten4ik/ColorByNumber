@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/_AbstractDemo.unity
+    guid: e2fbfc03ef096794f9e8a0af26a5268f
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/_AncientRuinsDemo.unity
+    guid: d7b20693d1c20824fbd3f4a0e44fe9f2
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/_AsianBuildingDemo.unity
+    guid: 342375371cadcc0429bf089aaa438da8
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/_BoardgameDemo.unity
+    guid: c9507c66f2024b3418e0df80a5bb71c6
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/_JungleDemo.unity
+    guid: 827bfea0af093ad40a096918aef62344
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/_GothicDungeonDemo.unity
+    guid: f2ab4823ba8b4b84ab3392ef5d6cffef
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/_DruidHomeDemo.unity
+    guid: 0b8ded79dd65a004c8f34340fc09fba5
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/_ForestDemo.unity
+    guid: 837c364d2b1f0574e96d9b1f732aaab1
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/_TundraDemo.unity
+    guid: c6612e1402dcc0e418fe6b6c620cdfa7
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/2.unity
+    guid: 19c48a89c92df2a4da463d90b6e75762
+  m_configObjects: {}
