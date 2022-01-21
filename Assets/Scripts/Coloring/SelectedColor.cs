@@ -17,6 +17,9 @@ namespace Assets.Scripts.Coloring
         public Sprite _default;
         public Sprite _completed;
 
+        public SelectedMesh _selectedMesh;
+        public MaterialsList _materialsList;
+
         public void ChangeColor(int number)
         {
             _selectedColorNumber = number;
@@ -29,6 +32,12 @@ namespace Assets.Scripts.Coloring
                 }
             }
 
+            if (_selectedMesh._isHighlight)
+            {
+                _selectedMesh.DefaultMesh(number, _selectedMesh._countMesh[number]);
+            }
+
+            _selectedMesh.HighlightMesh(number, _selectedMesh._countMesh[number]);
             _buttonsList[number].GetComponent<Image>().sprite = _selected;
         }
 

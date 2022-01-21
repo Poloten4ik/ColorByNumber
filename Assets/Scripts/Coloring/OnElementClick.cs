@@ -32,6 +32,8 @@ namespace Assets.Scripts.Coloring
                         if (materialNumber == _selectedColor._selectedColorNumber)
                         {
                             hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
+                            hit.collider.GetComponent<ObjectNumber>()._colored = true;
+  
                             hit.collider.enabled = false;
                             if (_materialsList._countOfMesh[materialNumber] > 0)
                             {
@@ -64,10 +66,12 @@ namespace Assets.Scripts.Coloring
                         if (materialNumber == _selectedColor._selectedColorNumber)
                         {
                             hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
+                            hit.collider.GetComponent<ObjectNumber>()._colored = true;
+
                             hit.collider.enabled = false;
                             if (_materialsList._countOfMesh[materialNumber] > 0)
                             {
-                                _materialsList._countOfMesh[materialNumber]--;
+                               _materialsList._countOfMesh[materialNumber]--;
 
                                 if (_materialsList._countOfMesh[materialNumber] == 0)
                                 {

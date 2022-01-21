@@ -17,6 +17,5 @@ namespace Assets.Scripts.Coloring
                 _allMeshes += _countOfMesh[i];
             }
         }
-
     }
 }
