@@ -10,7 +10,7 @@ namespace Assets.Scripts.Coloring
     {
         public int _selectedColorNumber;
         public List<GameObject> _buttonsList;
-     
+
         public ScrollRect _scrollRect;
 
         public Sprite _selected;
@@ -20,11 +20,16 @@ namespace Assets.Scripts.Coloring
         public SelectedMesh _selectedMesh;
         public MaterialsList _materialsList;
 
+        private void Start()
+        {
+            Load();
+        }
+
         public void ChangeColor(int number)
         {
             _selectedColorNumber = number;
 
-            foreach(Transform item in _scrollRect.content.transform)
+            foreach (Transform item in _scrollRect.content.transform)
             {
                 if (item.GetComponent<Button>().enabled)
                 {
@@ -43,13 +48,25 @@ namespace Assets.Scripts.Coloring
 
         public void ColorCompleted(int number)
         {
-            //var x = _buttonsList.First();
-            //_buttonsList.RemoveAt(number);
-            //_buttonsList.Add(x);
             _buttonsList[number].transform.SetAsLastSibling();
             _buttonsList[number].GetComponent<Button>().enabled = false;
             _buttonsList[number].GetComponent<Image>().sprite = _completed;
             _buttonsList[number].GetComponentInChildren<Text>().enabled = false;
+
+            //var x = _buttonsList.First();
+            //_buttonsList.RemoveAt(number);
+            //_buttonsList.Add(x);
+        }
+
+        public void Load()
+        {
+            for (int i = 0; i < _buttonsList.Count; i++)
+            {
+                if (PlayerPrefs.HasKey(i.ToString() + " button"))
+                {
+                    ColorCompleted(i);
+                }
+            }
         }
     }
 }
