@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,12 +16,10 @@ namespace Assets.Scripts.Coloring
         public int[] _countMesh ;
         public MaterialsList _materialsList;
 
-        private void Start()
+
+        private void Awake()
         {
-            for (int i = 0; i < _materialsList._countOfMesh.Length; i++)
-            {
-                _countMesh[i] = _materialsList._countOfMesh[i];
-            }
+            _countMesh = _materialsList._countOfMesh.ToArray();
         }
 
         public void HighlightMesh(int number, int count)

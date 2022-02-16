@@ -25,6 +25,7 @@ namespace Assets.Scripts.Coloring
                     int materialNumber = _meshes[i].GetComponent<ObjectNumber>()._objectNumber;
                     _meshes[i].GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
                     _meshes[i].GetComponent<ObjectNumber>()._colored = true;
+                    _meshes[i].GetComponent<Collider>().enabled = false;
                 }
             }
         }

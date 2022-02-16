@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8653985138718957958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8653985138718957959}
+  - component: {fileID: 8653985138718957960}
+  m_Layer: 0
+  m_Name: Material
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8653985138718957959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8653985138718957958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.20825, y: 3.2838936, z: 13.799732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8653985138718957960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8653985138718957958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5431c1b008b1604098cf47a16e79355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _material:
+  - {fileID: 2100000, guid: 3322696f8fc50fe45a887cb574714c6a, type: 2}
+  - {fileID: 2100000, guid: 8946969bcb8e99443a9141c9e0325ec9, type: 2}
+  - {fileID: 2100000, guid: 13b4f9d162053d44f81bbccddc718ef3, type: 2}
+  - {fileID: 2100000, guid: 5de056ccc65486646810058523a7848f, type: 2}
+  - {fileID: 2100000, guid: 1cf176125d0dd8c4b955472e7e68a6e8, type: 2}
+  - {fileID: 2100000, guid: 0a9e5d25bef928f4a928154d66a71d1d, type: 2}
+  - {fileID: 2100000, guid: 3248beea0c1c73d43ba422c0d094b2a1, type: 2}
+  - {fileID: 2100000, guid: 6e024a5d204fee946918c5d22e1506b8, type: 2}
+  - {fileID: 2100000, guid: c67a9bbcca69f204a8e7338189079d70, type: 2}
+  - {fileID: 2100000, guid: 7c41bcaeaaa0a584ead8d2e25306ab3b, type: 2}
+  - {fileID: 2100000, guid: 8403fbaf878df3142866b67fce8067f2, type: 2}
+  _countOfMesh: 010000000200000007000000010000000b0000000300000004000000090000000c0000000300000001000000
+  _allMeshes: 0
+  _completed: {fileID: 0}

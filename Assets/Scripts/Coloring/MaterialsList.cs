@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Coloring
 {
@@ -9,12 +10,32 @@ namespace Assets.Scripts.Coloring
         public Material[] _material;
         public int[] _countOfMesh;
         public int _allMeshes;
+        public Text _completed;
 
         void Start()
         {
-            for (int i = 0; i < _countOfMesh.Length;  i++)
+            for (int j = 0; j < _countOfMesh.Length; j++)
+            {
+                if (PlayerPrefs.HasKey(j.ToString() + " countOfMesh"))
+                {
+                    int count = PlayerPrefs.GetInt(j.ToString() + " countOfMesh");
+                    _countOfMesh[j] = count;
+                }
+            }
+
+            for (int i = 0; i < _countOfMesh.Length; i++)
             {
                 _allMeshes += _countOfMesh[i];
+            }
+        }
+
+        public void CompletedCheck()
+        {
+            _allMeshes--;
+
+            if (_allMeshes <= 0)
+            {
+                _completed.enabled = true;
             }
         }
     }
