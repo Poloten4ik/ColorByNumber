@@ -10,6 +10,8 @@ namespace Assets.Scripts.Coloring
         [SerializeField] private SelectedColor _selectedColor;
         private Camera _camera;
 
+        public string _scene;
+
         private void Awake()
         {
             _camera = Camera.main;
@@ -34,20 +36,20 @@ namespace Assets.Scripts.Coloring
                             hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
                             hit.collider.GetComponent<ObjectNumber>()._colored = true;
                             string materialCount = hit.collider.GetComponent<ObjectNumber>()._objectCount.ToString();
-                            PlayerPrefs.SetInt(materialCount, hit.collider.GetComponent<ObjectNumber>()._objectCount);
+                            PlayerPrefs.SetInt(_scene + materialCount, hit.collider.GetComponent<ObjectNumber>()._objectCount);
 
                             hit.collider.enabled = false;
                             if (_materialsList._countOfMesh[materialNumber] > 0)
                             {
                                 _materialsList._countOfMesh[materialNumber]--;
-                                _materialsList._allMeshes--;
 
-                                PlayerPrefs.SetInt(materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
+                                _materialsList.CompletedCheck();
+                                PlayerPrefs.SetInt(_scene + materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
 
                                 if (_materialsList._countOfMesh[materialNumber] == 0)
                                 {
                                     _selectedColor.ColorCompleted(materialNumber);
-                                    PlayerPrefsExtensions.SetBool(materialNumber + " button", true);
+                                    PlayerPrefsExtensions.SetBool(_scene + materialNumber + " button", true);
                                 }
                             }
                         }
@@ -75,7 +77,7 @@ namespace Assets.Scripts.Coloring
                             hit.collider.GetComponent<ObjectNumber>()._colored = true;
                             string materialCount = hit.collider.GetComponent<ObjectNumber>()._objectCount.ToString();
 
-                            PlayerPrefs.SetInt(materialCount, hit.collider.GetComponent<ObjectNumber>()._objectCount);
+                           PlayerPrefs.SetInt(_scene + materialCount, hit.collider.GetComponent<ObjectNumber>()._objectCount);
 
                             hit.collider.enabled = false;
                             if (_materialsList._countOfMesh[materialNumber] > 0)
@@ -83,12 +85,12 @@ namespace Assets.Scripts.Coloring
                                 _materialsList._countOfMesh[materialNumber]--;
 
                                 _materialsList.CompletedCheck();
-                                PlayerPrefs.SetInt(materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
+                                PlayerPrefs.SetInt(_scene + materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
 
                                 if (_materialsList._countOfMesh[materialNumber] == 0)
                                 {
                                     _selectedColor.ColorCompleted(materialNumber);
-                                    PlayerPrefsExtensions.SetBool(materialNumber + " button", true);
+                                    PlayerPrefsExtensions.SetBool(_scene + materialNumber + " button", true);
                                 }
                             }
                         }

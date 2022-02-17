@@ -16,7 +16,6 @@ namespace Assets.Scripts.Coloring
         public int[] _countMesh ;
         public MaterialsList _materialsList;
 
-
         private void Awake()
         {
             _countMesh = _materialsList._countOfMesh.ToArray();

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AxeyWorks/PolyWorks/Demos/Used/1.unity
     guid: 180fd1def5c03dc479ac73f5d6c56a27
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/2.unity
+    guid: 7fb4200cb57b2a641841b78d5b479d75
   m_configObjects: {}

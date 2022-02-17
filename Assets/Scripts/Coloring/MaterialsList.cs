@@ -12,13 +12,15 @@ namespace Assets.Scripts.Coloring
         public int _allMeshes;
         public Text _completed;
 
+        [SerializeField] private OnElementClick _onElementClick;
+
         void Start()
         {
             for (int j = 0; j < _countOfMesh.Length; j++)
             {
-                if (PlayerPrefs.HasKey(j.ToString() + " countOfMesh"))
+                if (PlayerPrefs.HasKey(_onElementClick._scene + j.ToString() + " countOfMesh"))
                 {
-                    int count = PlayerPrefs.GetInt(j.ToString() + " countOfMesh");
+                    int count = PlayerPrefs.GetInt(_onElementClick._scene + j.ToString() + " countOfMesh");
                     _countOfMesh[j] = count;
                 }
             }

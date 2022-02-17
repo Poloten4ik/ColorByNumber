@@ -20,6 +20,8 @@ namespace Assets.Scripts.Coloring
         public SelectedMesh _selectedMesh;
         public MaterialsList _materialsList;
 
+        [SerializeField] private OnElementClick _onElementClick;
+
         private void Start()
         {
             Load();
@@ -62,7 +64,7 @@ namespace Assets.Scripts.Coloring
         {
             for (int i = 0; i < _buttonsList.Count; i++)
             {
-                if (PlayerPrefs.HasKey(i.ToString() + " button"))
+                if (PlayerPrefs.HasKey(_onElementClick._scene + i.ToString() + " button"))
                 {
                     ColorCompleted(i);
                 }
