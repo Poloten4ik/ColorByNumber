@@ -15,11 +15,11 @@ E:/ColorByNumber/ColorByNumber
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-14296
+6261
 Successfully changed project path to: E:/ColorByNumber/ColorByNumber
 E:/ColorByNumber/ColorByNumber
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 1048.09 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 265.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path E:/Unity/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -35,43 +35,258 @@ Initialize mono
 Mono path[0] = 'E:/Unity/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.147898 seconds.
+Registered in 0.001250 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 264.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 364.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.038 seconds
+- Completed reload, in  3.616 seconds
 Domain Reload Profiling:
-	ReloadAssembly (6038ms)
-		BeginReloadAssembly (133ms)
+	ReloadAssembly (3617ms)
+		BeginReloadAssembly (66ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (881ms)
-			LoadAssemblies (132ms)
+		EndReloadAssembly (906ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (283ms)
+			SetupTypeCache (183ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (440ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (584ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (264ms)
-				BeforeProcessingInitializeOnLoad (25ms)
-				ProcessInitializeOnLoadAttributes (103ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				RefreshPlugins (364ms)
+				BeforeProcessingInitializeOnLoad (26ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.610527 seconds.
+Registered in 0.008770 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 395.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.228 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2229ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1960ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (573ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (998ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (395ms)
+				BeforeProcessingInitializeOnLoad (153ms)
+				ProcessInitializeOnLoadAttributes (437ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 2.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2734 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 220.2 MB.
+System memory in use after: 220.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3188.
+Total: 3.534000 ms (FindLiveObjects: 0.457900 ms CreateObjectMapping: 0.185900 ms MarkObjects: 2.858300 ms  DeleteObjects: 0.030500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/wall_4.fbx
+  artifactKey: Guid(fbdc05d3fa8be054c91b7ca64e1bbea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/wall_4.fbx using Guid(fbdc05d3fa8be054c91b7ca64e1bbea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c3564b533b2150267906a636b60ebd') in 0.544538 seconds 
+  Import took 0.560683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 896.072438 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Materials/3.mat
+  artifactKey: Guid(23b42e2d395367443a276080d542feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Materials/3.mat using Guid(23b42e2d395367443a276080d542feaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c6e99d9912ac510ddbe823795d7c75') in 0.024443 seconds 
+  Import took 0.035625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 117.390868 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Roof_Ridge_02.FBX
+  artifactKey: Guid(97822de9ac59c124e9c5f05b928c7cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Roof_Ridge_02.FBX using Guid(97822de9ac59c124e9c5f05b928c7cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b58e96be330fabe71f5e82c7402c20') in 0.037222 seconds 
+  Import took 0.052231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Rural_01.FBX
+  artifactKey: Guid(423c59d2e6e075a47a2ccf48a565048d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Rural_01.FBX using Guid(423c59d2e6e075a47a2ccf48a565048d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7539f63f76853563e17565e3b9efa1') in 0.046794 seconds 
+  Import took 0.063051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Half_01.FBX
+  artifactKey: Guid(2c6f220c34661a043aa7aec19a0b441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Half_01.FBX using Guid(2c6f220c34661a043aa7aec19a0b441a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc03828f687cb956c7997e38bdf83d5c') in 0.069345 seconds 
+  Import took 0.088175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Paper_Screen_Door_01.FBX
+  artifactKey: Guid(7c30e0038c0134f4fb567eb8f51dc654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Paper_Screen_Door_01.FBX using Guid(7c30e0038c0134f4fb567eb8f51dc654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ee897eca586a8fca8004804ad81cef') in 0.041520 seconds 
+  Import took 0.056860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Roof_Tile_01.FBX
+  artifactKey: Guid(e1d9c317611eb01439b24c476b42c224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Roof_Tile_01.FBX using Guid(e1d9c317611eb01439b24c476b42c224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '648e32368c5e23a28c24a0f95e72ed57') in 0.032009 seconds 
+  Import took 0.045116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Doorway_01.FBX
+  artifactKey: Guid(0071076e633802245af189392d0fb7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Doorway_01.FBX using Guid(0071076e633802245af189392d0fb7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e6351ce265f9923254830dffd4a9e0') in 0.038199 seconds 
+  Import took 0.049282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Paper_Screen_Open_01.FBX
+  artifactKey: Guid(97c2500cc00fb5e4e94fdc8807845ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Paper_Screen_Open_01.FBX using Guid(97c2500cc00fb5e4e94fdc8807845ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac0ff52cf6ffea41dd68483477a651a') in 0.038580 seconds 
+  Import took 0.048794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_01.FBX
+  artifactKey: Guid(277dc1df5dc6bc94ba7aebfca6175941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_01.FBX using Guid(277dc1df5dc6bc94ba7aebfca6175941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5d708932a70c06e36a8d404a024a0a2') in 0.028236 seconds 
+  Import took 0.041296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Doorway_Open_01.FBX
+  artifactKey: Guid(8baab27ca3abe714796a6b910cd1037f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Doorway_Open_01.FBX using Guid(8baab27ca3abe714796a6b910cd1037f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e09cf990bd7dd919dcf203cd9f440fd') in 0.035104 seconds 
+  Import took 0.045709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000841 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Rural_02.FBX
+  artifactKey: Guid(78458c25c60b6984189d1f3f89387352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Rural_02.FBX using Guid(78458c25c60b6984189d1f3f89387352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1305fa38792f1257f7719401e934c0b8') in 0.031669 seconds 
+  Import took 0.043815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Paper_Screen_01.FBX
+  artifactKey: Guid(494a7af268ab5c640a5e29147729a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Paper_Screen_01.FBX using Guid(494a7af268ab5c640a5e29147729a908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecff55533206738262afa567bc86f84') in 0.035710 seconds 
+  Import took 0.050482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Sliding_Screen_Door_01.FBX
+  artifactKey: Guid(e54d38ea306b1514ea4826e358d8ba90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Sliding_Screen_Door_01.FBX using Guid(e54d38ea306b1514ea4826e358d8ba90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e4ec44931235f2a40b3e015c963289') in 0.035534 seconds 
+  Import took 0.047328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Lattice_01.FBX
+  artifactKey: Guid(7b747c057a01e684da93cf3dada6a839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Lattice_01.FBX using Guid(7b747c057a01e684da93cf3dada6a839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb42ee2692794b0b3c868db0872e69f') in 0.029783 seconds 
+  Import took 0.042348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Door_01.FBX
+  artifactKey: Guid(8df411d249ef16d4fb94a0d22d5de561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Wall_Door_01.FBX using Guid(8df411d249ef16d4fb94a0d22d5de561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2499c3e968b9fecd3d2b72a46a5943') in 0.033712 seconds 
+  Import took 0.045440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Roof_Ridge_02.FBX
+  artifactKey: Guid(97822de9ac59c124e9c5f05b928c7cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Asian Additional/Asian_Prop_Building_Modular_Roof_Ridge_02.FBX using Guid(97822de9ac59c124e9c5f05b928c7cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b58e96be330fabe71f5e82c7402c20') in 0.021814 seconds 
+  Import took 0.030976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.167555 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Roof.fbx
+  artifactKey: Guid(ef89c5ab556aa97429cdc3d150d63703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Roof.fbx using Guid(ef89c5ab556aa97429cdc3d150d63703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7276779fb6fd09c0bf304ddb6fc837c') in 0.062891 seconds 
+  Import took 0.077452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 666.620951 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Roof_2.fbx
+  artifactKey: Guid(e6b0144342b6c29469ae6ca2a6925718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Roof_2.fbx using Guid(e6b0144342b6c29469ae6ca2a6925718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00b6df8e1db5340c42b2322c0d33a6e') in 0.079808 seconds 
+  Import took 0.091596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 576.453545 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Roof_3.fbx
+  artifactKey: Guid(0f06d9b0a80eb2743b3643edad0fd39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Roof_3.fbx using Guid(0f06d9b0a80eb2743b3643edad0fd39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297fdd4482411f1639366f748b97c3b9') in 0.076712 seconds 
+  Import took 0.094777 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

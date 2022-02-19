@@ -339,6 +339,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2882633605175109395, guid: 7aecc92fcbc7bc049b81bdd2733d8da0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6962156527476349174, guid: 7aecc92fcbc7bc049b81bdd2733d8da0, type: 3}
       propertyPath: m_Name
       value: GothicPalace
