@@ -1,0 +1,612 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1110; Version 2009; 64bit' Language: 'ru' Physical Memory: 8128 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+E:\Unity\2020.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/ColorByNumber/ColorByNumber
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+6073
+Successfully changed project path to: E:/ColorByNumber/ColorByNumber
+E:/ColorByNumber/ColorByNumber
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 240.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.18f1 (a7d1c678663c)
+[Subsystems] Discovering subsystems at path E:/Unity/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/ColorByNumber/ColorByNumber/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   
+    VRAM:     4018 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'E:/Unity/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001295 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 218.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.801 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2801ms)
+		BeginReloadAssembly (53ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (658ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (162ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (367ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (218ms)
+				BeforeProcessingInitializeOnLoad (19ms)
+				ProcessInitializeOnLoadAttributes (95ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004408 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 389.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.033 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5040ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (4831ms)
+			LoadAssemblies (2518ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1064ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (1023ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (390ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (475ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 2.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2734 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 220.5 MB.
+System memory in use after: 220.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3188.
+Total: 3.575300 ms (FindLiveObjects: 0.467400 ms CreateObjectMapping: 0.186700 ms MarkObjects: 2.887900 ms  DeleteObjects: 0.031300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/AxeyWorks/PolyWorks/MergedDemoFBX/Materials/Castle
+  artifactKey: Guid(16f125ef1c375ef4aba9fddf44114d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/MergedDemoFBX/Materials/Castle using Guid(16f125ef1c375ef4aba9fddf44114d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efecb4a36ba2790cfc87e5fc8da6d6f') in 0.022959 seconds 
+  Import took 0.039202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048638 seconds.
+  path: Assets/AxeyWorks/PolyWorks/MergedDemoFBX/Materials/Castle/1.mat
+  artifactKey: Guid(5381b2e91822fce488e7d57692729397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/MergedDemoFBX/Materials/Castle/1.mat using Guid(5381b2e91822fce488e7d57692729397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762fa14d32a3c2129ccff999830c18dd') in 0.305677 seconds 
+  Import took 0.317983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 221.982288 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Disc_Gold_Gem_01.FBX
+  artifactKey: Guid(752ed7b38ee2be34ab2b9eb336c25002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Disc_Gold_Gem_01.FBX using Guid(752ed7b38ee2be34ab2b9eb336c25002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f952680fcb416291e81f4e47d987940a') in 0.134231 seconds 
+  Import took 0.148224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_01.FBX
+  artifactKey: Guid(83d57096c03771c4f95db346baa67fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_01.FBX using Guid(83d57096c03771c4f95db346baa67fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99dbd6ea04f0cea2d08afa1bfa01fd08') in 0.040644 seconds 
+  Import took 0.049979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_03.FBX
+  artifactKey: Guid(9f53bd110b73f7a4882fae9555d38407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_03.FBX using Guid(9f53bd110b73f7a4882fae9555d38407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27595fdd957d535c98c92e3c11f49145') in 0.040829 seconds 
+  Import took 0.054731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_01.FBX
+  artifactKey: Guid(615857e9ff0cbea4b9ba53dee045d26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_01.FBX using Guid(615857e9ff0cbea4b9ba53dee045d26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68463522c7092254a46c5b53c1f9dd1') in 0.044667 seconds 
+  Import took 0.055676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_03.FBX
+  artifactKey: Guid(f1816f1e39058e04abc7e5bdc5158ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_03.FBX using Guid(f1816f1e39058e04abc7e5bdc5158ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481cde63697ad4a5a3f25117e00b46ce') in 0.046340 seconds 
+  Import took 0.056524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_01.FBX
+  artifactKey: Guid(cd40937c8d52e8b4bbc1d2d206d12df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_01.FBX using Guid(cd40937c8d52e8b4bbc1d2d206d12df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699f4bd4bf78b3bcafa9300858e05f21') in 0.037718 seconds 
+  Import took 0.049444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_04.FBX
+  artifactKey: Guid(776335709c080a14989a313fed9222fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_04.FBX using Guid(776335709c080a14989a313fed9222fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43c1a54dd2a855abb82b7942e66d0e7') in 0.035370 seconds 
+  Import took 0.046909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_Gem_02.FBX
+  artifactKey: Guid(648a5c50b519fc74997293825cf66308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_Gem_02.FBX using Guid(648a5c50b519fc74997293825cf66308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ebda0d9b44b571df09189c7a959e30') in 0.040116 seconds 
+  Import took 0.050026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_Gem_03.FBX
+  artifactKey: Guid(04947a7e6af728642861642cf3b4506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_Gem_03.FBX using Guid(04947a7e6af728642861642cf3b4506e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ada78988eff447db7898c9440108e9cc') in 0.045532 seconds 
+  Import took 0.056788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_02.FBX
+  artifactKey: Guid(ea650bfc0dcafd14e9aac7b217ed4d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_02.FBX using Guid(ea650bfc0dcafd14e9aac7b217ed4d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600b9d078b00ee49eff2c56378cffb53') in 0.037859 seconds 
+  Import took 0.049152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000568 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_02.FBX
+  artifactKey: Guid(4e7038ac7a8a459448ebf8ec54fcd474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_02.FBX using Guid(4e7038ac7a8a459448ebf8ec54fcd474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e42629f4d05a1bd279914aefc73fbc') in 0.033892 seconds 
+  Import took 0.044055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_Gem_01.FBX
+  artifactKey: Guid(d2501b30f3c97004c809710f2b01ff56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Gold_Gem_01.FBX using Guid(d2501b30f3c97004c809710f2b01ff56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed31fd8791b316873868d84496e0a926') in 0.034621 seconds 
+  Import took 0.045615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.209778 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_04.FBX
+  artifactKey: Guid(2f6932b28e8e71146a61bcedccf64de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_04.FBX using Guid(2f6932b28e8e71146a61bcedccf64de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb03c4f4b347f2e8e605c5aea4531dc') in 0.037840 seconds 
+  Import took 0.048166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Jackal_Face_01.FBX
+  artifactKey: Guid(bc23f6dce2ad7884a8a017edc1f3958b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Jackal_Face_01.FBX using Guid(bc23f6dce2ad7884a8a017edc1f3958b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35014d07e72841202c7ff5fe5215ab82') in 0.048789 seconds 
+  Import took 0.059367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_04.FBX
+  artifactKey: Guid(2f6932b28e8e71146a61bcedccf64de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Ornament_Sun_Plaque_Small_Gold_Gem_04.FBX using Guid(2f6932b28e8e71146a61bcedccf64de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb03c4f4b347f2e8e605c5aea4531dc') in 0.029505 seconds 
+  Import took 0.040264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_06.FBX
+  artifactKey: Guid(04c5d6fa8c9411d4f945a472d217eda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_06.FBX using Guid(04c5d6fa8c9411d4f945a472d217eda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66fe894964c623446119a1cfc3ae8f1') in 0.030302 seconds 
+  Import took 0.040432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Panther_01.FBX
+  artifactKey: Guid(3f21f38a941ef554e9a66f9bcb476502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Panther_01.FBX using Guid(3f21f38a941ef554e9a66f9bcb476502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faae037c5a3919b825a77814d2e2a6ac') in 0.033813 seconds 
+  Import took 0.042802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_01.FBX
+  artifactKey: Guid(c52444dda3cb7f84ebc5a1f84e201c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_01.FBX using Guid(c52444dda3cb7f84ebc5a1f84e201c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6518665d1f35cc183302ecb20f739d95') in 0.041474 seconds 
+  Import took 0.051006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_01.FBX
+  artifactKey: Guid(68176798b41f66046abbc0e2d86e6f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_01.FBX using Guid(68176798b41f66046abbc0e2d86e6f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d76faa0517735075474a1881d22317') in 0.037519 seconds 
+  Import took 0.046852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_01.FBX
+  artifactKey: Guid(6007b957aedfb544a98548c56822780e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_01.FBX using Guid(6007b957aedfb544a98548c56822780e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c2d73a4c9f0509090dc8af9e6c1255') in 0.029421 seconds 
+  Import took 0.039162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_02.FBX
+  artifactKey: Guid(553b3d6a561748a4ea9630e6d3bdf585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_02.FBX using Guid(553b3d6a561748a4ea9630e6d3bdf585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec9859ab36b42ae6e06efb3d8c55ed6') in 0.031267 seconds 
+  Import took 0.039187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_02.FBX
+  artifactKey: Guid(fd6c0b1dc3fbf2643af5b3388a1e06af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_02.FBX using Guid(fd6c0b1dc3fbf2643af5b3388a1e06af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1fdbaf796464b144371fc576e293a01') in 0.031779 seconds 
+  Import took 0.040686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_04.FBX
+  artifactKey: Guid(a1c7135a3aef89a4282ff7440e9d0950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_04.FBX using Guid(a1c7135a3aef89a4282ff7440e9d0950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bdcc23025a11c6e7d23268fc00dad0') in 0.031684 seconds 
+  Import took 0.040334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_07.FBX
+  artifactKey: Guid(05877c2caf7be564499187c6d23a3e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_07.FBX using Guid(05877c2caf7be564499187c6d23a3e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfedcf9de0873de508219c0c3263f936') in 0.031224 seconds 
+  Import took 0.041169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_01.FBX
+  artifactKey: Guid(6ab85a709c25be142bdc20097b4bcbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_01.FBX using Guid(6ab85a709c25be142bdc20097b4bcbf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1891e744d368ef8244f1ce1c0c254a01') in 0.028137 seconds 
+  Import took 0.035701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_01.FBX
+  artifactKey: Guid(e6ec66d2879c79344b90dc29081c8f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_01.FBX using Guid(e6ec66d2879c79344b90dc29081c8f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48c6b32ab306f64bc337ab3b047f738') in 0.026939 seconds 
+  Import took 0.035440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_02.FBX
+  artifactKey: Guid(d038530084f7bcf48b573d44af9b418d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_02.FBX using Guid(d038530084f7bcf48b573d44af9b418d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4a84ab18aded7f4f3971f64bfe816d') in 0.040629 seconds 
+  Import took 0.049728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_04.FBX
+  artifactKey: Guid(c8ebe178fb6cdc74d8c6556fe220675b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_04.FBX using Guid(c8ebe178fb6cdc74d8c6556fe220675b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '833c552ab5e5110f5c53d2b645ba7f14') in 0.036369 seconds 
+  Import took 0.044855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_03.FBX
+  artifactKey: Guid(91d3754ea9a1338479ff5958540f171b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_03.FBX using Guid(91d3754ea9a1338479ff5958540f171b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a809f2be449206478df94ce32aff88a8') in 0.032295 seconds 
+  Import took 0.040799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stairs_Stone_01.FBX
+  artifactKey: Guid(bf59caed2a8d11e4a84d47174e3af83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stairs_Stone_01.FBX using Guid(bf59caed2a8d11e4a84d47174e3af83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6658b03cdb09e8f0b711106035ea9db3') in 0.026258 seconds 
+  Import took 0.035146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Outstretched_01.FBX
+  artifactKey: Guid(a612a808a5d3d7f429e7749a3669cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Outstretched_01.FBX using Guid(a612a808a5d3d7f429e7749a3669cac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b344088dfedc3ae94b27e508748fd93d') in 0.028893 seconds 
+  Import took 0.038282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Raised_Platform_01.FBX
+  artifactKey: Guid(3b2c2a10c7bb0574d9d542256ee83d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Raised_Platform_01.FBX using Guid(3b2c2a10c7bb0574d9d542256ee83d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2787a0ecdd259e8c18fc0400a197d6d8') in 0.032736 seconds 
+  Import took 0.041974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Column_Markings_02.FBX
+  artifactKey: Guid(b5b5f8ee1b392c6429efc863d1dfeed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Column_Markings_02.FBX using Guid(b5b5f8ee1b392c6429efc863d1dfeed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19cc63eff08a043d8ba800b897347f06') in 0.039741 seconds 
+  Import took 0.050540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_05.FBX
+  artifactKey: Guid(fcb40b576e8d71b4fb5f4819f7305f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Wraped_05.FBX using Guid(fcb40b576e8d71b4fb5f4819f7305f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb20bad84d782a4b64c1c036e3063d1e') in 0.039371 seconds 
+  Import took 0.048633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Sphinx_Large_01.FBX
+  artifactKey: Guid(4709e22f8e583154ba0c50ea0593d9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Sphinx_Large_01.FBX using Guid(4709e22f8e583154ba0c50ea0593d9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce711bb33616ee500e0f51cb27520694') in 0.048293 seconds 
+  Import took 0.057431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_04.FBX
+  artifactKey: Guid(dae393d7dbac92b499f66844138bca1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_04.FBX using Guid(dae393d7dbac92b499f66844138bca1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e98933187e8771e2054cf40e9d20831') in 0.036838 seconds 
+  Import took 0.045116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Terrain_Sand_Dune_Peak_01.FBX
+  artifactKey: Guid(ca413313cec8d174485bda10050783bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Terrain_Sand_Dune_Peak_01.FBX using Guid(ca413313cec8d174485bda10050783bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb5684cfcd4fb46440b690dd025d38c') in 0.032572 seconds 
+  Import took 0.042124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Snake_Head_Gems_01.FBX
+  artifactKey: Guid(8b82155bb8e206545a8ebc8121a9c030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Statue_Snake_Head_Gems_01.FBX using Guid(8b82155bb8e206545a8ebc8121a9c030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6518a9c0e08429a15828bd3aa460fcd6') in 0.035305 seconds 
+  Import took 0.045260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Laying_01.FBX
+  artifactKey: Guid(b867a4509d4ad1f44be8455e8688eb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Laying_01.FBX using Guid(b867a4509d4ad1f44be8455e8688eb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e938481de7f7b54e506a4fb4abf30cbb') in 0.041306 seconds 
+  Import took 0.050954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Column_Markings_01.FBX
+  artifactKey: Guid(b8e6ad81b9d49ac4291a65194aa226d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Column_Markings_01.FBX using Guid(b8e6ad81b9d49ac4291a65194aa226d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a7012802192c6b8050b0ec50b33209') in 0.027518 seconds 
+  Import took 0.036405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_03.FBX
+  artifactKey: Guid(9b15849c69cf3bf44be9d49659a50a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_03.FBX using Guid(9b15849c69cf3bf44be9d49659a50a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd9bcc26465074cf542b6efabf7c7e8') in 0.032268 seconds 
+  Import took 0.041982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_04.FBX
+  artifactKey: Guid(d94116f42928e584381db90fad4f9609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_04.FBX using Guid(d94116f42928e584381db90fad4f9609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f66ef9e10ca4f41db4b73a8b93c7b50') in 0.034579 seconds 
+  Import took 0.043103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_02.FBX
+  artifactKey: Guid(f464762a2acfb6c4287878e8124a103c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_02.FBX using Guid(f464762a2acfb6c4287878e8124a103c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547d9e8048db64eca811a9fb99c885ef') in 0.023508 seconds 
+  Import took 0.033102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_05.FBX
+  artifactKey: Guid(1d75b1501c8ebc248ae562e8d80ea588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_05.FBX using Guid(1d75b1501c8ebc248ae562e8d80ea588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd941616055ae9db38576137251cafc6') in 0.035643 seconds 
+  Import took 0.045787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_02.FBX
+  artifactKey: Guid(219ba4711486eb146b2f97d755c4f7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_02.FBX using Guid(219ba4711486eb146b2f97d755c4f7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4add1f81f197a57c6df109178c92dc') in 0.030809 seconds 
+  Import took 0.040662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_03.FBX
+  artifactKey: Guid(d496a2568a4c0af459a36580b2162ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Vegetation_Jungle_Vine_Hanging_03.FBX using Guid(d496a2568a4c0af459a36580b2162ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eed42c5fb7b033376a6e878bf785482') in 0.027058 seconds 
+  Import took 0.039044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_03.FBX
+  artifactKey: Guid(f3c5f27fe87e2ec4a98af85cf55df8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Stepping_Stone_03.FBX using Guid(f3c5f27fe87e2ec4a98af85cf55df8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ff6bd806b3b7a19de30d1d37b4c7e0') in 0.039313 seconds 
+  Import took 0.049393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_03.FBX
+  artifactKey: Guid(277001841dc944b4f80e027652e86249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Prop_Jungle_Temple_Pillar_Block_Markings_03.FBX using Guid(277001841dc944b4f80e027652e86249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411f34d1db6b55e322001cde2a35ff38') in 0.048972 seconds 
+  Import took 0.058790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 310.058822 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Platform.fbx
+  artifactKey: Guid(e7c68c4eaecba8b4280da302ed8e85b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Platform.fbx using Guid(e7c68c4eaecba8b4280da302ed8e85b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66bcb5c8daba794dd7a3f8d1b57592d') in 0.048898 seconds 
+  Import took 0.058519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 207.049373 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Pillar.fbx
+  artifactKey: Guid(1ddd6d2985a02594199a813a4308981a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Pillar.fbx using Guid(1ddd6d2985a02594199a813a4308981a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e4cc79858b60475f1dd6bdf516dad6') in 0.062077 seconds 
+  Import took 0.073968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.239356 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Materials/2.mat
+  artifactKey: Guid(5a056696086e4c24ba0cdc5eebd26fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Ancient Ruins/Materials/2.mat using Guid(5a056696086e4c24ba0cdc5eebd26fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6295c663e2bfd093400d6c04d074555e') in 0.016456 seconds 
+  Import took 0.025067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 680.992983 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Sun.fbx
+  artifactKey: Guid(d278c3209445ea248acb280befc2ffe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Sun.fbx using Guid(d278c3209445ea248acb280befc2ffe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1894a29388716f0e82d209c1086f43') in 0.062547 seconds 
+  Import took 0.075769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 157.252801 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Standin.fbx
+  artifactKey: Guid(b1e30975629102140bdc946aec3feca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Standin.fbx using Guid(b1e30975629102140bdc946aec3feca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d320dd16f66ab3cf906d0be56c5d6fd') in 0.092982 seconds 
+  Import took 0.108854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 376.383526 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Arch.fbx
+  artifactKey: Guid(6c46e250b2bf90a4f843c7dbc565ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Arch.fbx using Guid(6c46e250b2bf90a4f843c7dbc565ab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381c5677ba512c520c89ca8d74da2a90') in 0.057012 seconds 
+  Import took 0.071660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 457.261854 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Half.fbx
+  artifactKey: Guid(11ff136ca38b4ef4f93f90df02a83c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Half.fbx using Guid(11ff136ca38b4ef4f93f90df02a83c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa29f100ecba0fe08349e73a017b2d14') in 0.065600 seconds 
+  Import took 0.077605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 217.237716 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Snake.fbx
+  artifactKey: Guid(641d44cd0b930c44eba7040d0029152e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Meshes/Vegetation/Blendered/Snake.fbx using Guid(641d44cd0b930c44eba7040d0029152e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0437cfafd9051f802b1f277b0cbba784') in 0.059307 seconds 
+  Import took 0.078304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.502200 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Demos/Used/1.unity
+  artifactKey: Guid(180fd1def5c03dc479ac73f5d6c56a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Demos/Used/1.unity using Guid(180fd1def5c03dc479ac73f5d6c56a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f828a547c40362c651fea7b7fa96f7bc') in 0.017291 seconds 
+  Import took 0.028875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000623 seconds.
+  path: Assets/AxeyWorks/PolyWorks/Demos/Used/1.unity
+  artifactKey: Guid(180fd1def5c03dc479ac73f5d6c56a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AxeyWorks/PolyWorks/Demos/Used/1.unity using Guid(180fd1def5c03dc479ac73f5d6c56a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f828a547c40362c651fea7b7fa96f7bc') in 0.004884 seconds 
+  Import took 0.016330 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
