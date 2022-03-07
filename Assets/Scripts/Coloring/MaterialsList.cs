@@ -8,6 +8,7 @@ namespace Assets.Scripts.Coloring
     public class MaterialsList : MonoBehaviour
     {
         public Material[] _material;
+        public Color[] _color;
         public int[] _countOfMesh;
         public int _allMeshes;
         public Text _completed;

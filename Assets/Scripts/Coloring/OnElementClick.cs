@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Linq;
 using UnityEngine;
+using DG.Tweening;
 
 namespace Assets.Scripts.Coloring
 {
@@ -34,6 +35,14 @@ namespace Assets.Scripts.Coloring
                         if (materialNumber == _selectedColor._selectedColorNumber)
                         {
                             hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
+
+                            var anim = hit.collider.GetComponent<Animation>();
+
+                            if (anim != null)
+                            {
+                                hit.collider.GetComponent<Animation>().Play();
+                            }
+
                             hit.collider.GetComponent<ObjectNumber>()._colored = true;
                             string materialCount = hit.collider.GetComponent<ObjectNumber>()._objectCount.ToString();
                             PlayerPrefs.SetInt(_scene + materialCount, hit.collider.GetComponent<ObjectNumber>()._objectCount);
@@ -74,10 +83,24 @@ namespace Assets.Scripts.Coloring
                         if (materialNumber == _selectedColor._selectedColorNumber)
                         {
                             hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
+                            var animationOnClick = hit.collider.GetComponent<AnimationOnClick>();
+
+                            if (animationOnClick != null)
+                            {
+                                animationOnClick.StartAnimation();
+                            }
+                            
+                            //var anim = hit.collider.GetComponent<Animation>();
+
+                            //if (anim != null)
+                            //{
+                            //    hit.collider.GetComponent<Animation>().Play();
+                            //}
+
                             hit.collider.GetComponent<ObjectNumber>()._colored = true;
                             string materialCount = hit.collider.GetComponent<ObjectNumber>()._objectCount.ToString();
 
-                           PlayerPrefs.SetInt(_scene + materialCount, hit.collider.GetComponent<ObjectNumber>()._objectCount);
+                            PlayerPrefs.SetInt(_scene + materialCount, hit.collider.GetComponent<ObjectNumber>()._objectCount);
 
                             hit.collider.enabled = false;
                             if (_materialsList._countOfMesh[materialNumber] > 0)
