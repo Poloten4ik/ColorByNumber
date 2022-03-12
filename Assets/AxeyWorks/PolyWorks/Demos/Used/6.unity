@@ -15956,7 +15956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d24905555d541a41a51a5d7df7abeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _newScale: {x: 0.02, y: 0, z: 0.02}
+  _newScale: {x: 0.01, y: 0, z: 0.01}
 --- !u!33 &4163139706249649002
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16602,7 +16602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d24905555d541a41a51a5d7df7abeca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _newScale: {x: 0.01, y: 0, z: 0.01}
+  _newScale: {x: 0.007, y: 0, z: 0.007}
 --- !u!23 &4830708630662268345
 MeshRenderer:
   m_ObjectHideFlags: 0
