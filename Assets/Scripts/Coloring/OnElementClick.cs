@@ -36,11 +36,11 @@ namespace Assets.Scripts.Coloring
                         {
                             hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
 
-                            var anim = hit.collider.GetComponent<Animation>();
+                            var animationOnClick = hit.collider.GetComponent<AnimationOnClick>();
 
-                            if (anim != null)
+                            if (animationOnClick != null)
                             {
-                                hit.collider.GetComponent<Animation>().Play();
+                                animationOnClick.StartAnimation();
                             }
 
                             hit.collider.GetComponent<ObjectNumber>()._colored = true;
@@ -89,13 +89,6 @@ namespace Assets.Scripts.Coloring
                             {
                                 animationOnClick.StartAnimation();
                             }
-                            
-                            //var anim = hit.collider.GetComponent<Animation>();
-
-                            //if (anim != null)
-                            //{
-                            //    hit.collider.GetComponent<Animation>().Play();
-                            //}
 
                             hit.collider.GetComponent<ObjectNumber>()._colored = true;
                             string materialCount = hit.collider.GetComponent<ObjectNumber>()._objectCount.ToString();
