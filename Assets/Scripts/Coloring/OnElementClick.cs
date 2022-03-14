@@ -32,7 +32,7 @@ namespace Assets.Scripts.Coloring
                     {
                         int materialNumber = hit.collider.GetComponent<ObjectNumber>()._objectNumber;
 
-                        if (materialNumber == _selectedColor._selectedColorNumber)
+                        if (materialNumber == _selectedColor._selectedColorNumber && hit.collider.enabled)
                         {
                             hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
 

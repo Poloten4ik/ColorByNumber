@@ -28,7 +28,10 @@ namespace Assets.Scripts.Coloring
                 bool isColored = _content[number].GetChild(i).GetComponent<ObjectNumber>()._colored;
 
                 if (isColored == false)
-                _content[number].GetChild(i).GetComponent<MeshRenderer>().material = _highlight;
+                {
+                    _content[number].GetChild(i).GetComponent<MeshRenderer>().material = _highlight;
+                    _content[number].GetChild(i).GetComponent<Collider>().enabled = true;
+                } 
             }
 
             _isHighlight = true;
@@ -43,7 +46,10 @@ namespace Assets.Scripts.Coloring
                 bool isColored = _content[_currentSelected].GetChild(i).GetComponent<ObjectNumber>()._colored;
 
                 if (isColored == false)
-                _content[_currentSelected].GetChild(i).GetComponent<MeshRenderer>().material = _default;
+                {
+                    _content[_currentSelected].GetChild(i).GetComponent<MeshRenderer>().material = _default;
+                    _content[_currentSelected].GetChild(i).GetComponent<Collider>().enabled = false;
+                }
             }
         }
     }
