@@ -12,7 +12,7 @@ namespace Assets.Scripts.CameraController
         public void Update()
         {
 
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+            if (Input.touchCount > 0 && Input.touchCount < 2 && Input.GetTouch(0).phase == TouchPhase.Moved)
             {
                 _swipeDelta = Vector2.zero;
 
