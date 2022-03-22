@@ -925,6 +925,7 @@ MonoBehaviour:
   _completed: {fileID: 21300000, guid: 0aa457e6e148e8848aa9630cb32f08d1, type: 3}
   _selectedMesh: {fileID: 0}
   _materialsList: {fileID: 0}
+  _onElementClick: {fileID: 0}
 --- !u!1 &445086080653539212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,10 +1259,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 445086081238836191}
-        m_TargetAssemblyTypeName: Assets.Scripts.Menu.LoadScene, Assembly-CSharp
-        m_MethodName: LoadScenes
-        m_Mode: 3
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Assets.Scripts.Menu.StartMenu, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1862,7 +1863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79adbfbf5404c647969acac21543784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _number: 0
+  _unlocked: 0
+  _buttons: []
 --- !u!1 &445086081253543025
 GameObject:
   m_ObjectHideFlags: 0

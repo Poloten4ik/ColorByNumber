@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
     path: Assets/AxeyWorks/PolyWorks/Demos/Used/1.unity
     guid: 180fd1def5c03dc479ac73f5d6c56a27
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/2.unity
+    guid: 7fb4200cb57b2a641841b78d5b479d75
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/3.unity
+    guid: 837c364d2b1f0574e96d9b1f732aaab1
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/4.unity
+    guid: 342375371cadcc0429bf089aaa438da8
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/5.unity
+    guid: 19c48a89c92df2a4da463d90b6e75762
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/6.unity
+    guid: d7b20693d1c20824fbd3f4a0e44fe9f2
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/7.unity
+    guid: 161429ff0bc3ee042aa94bb42bb2cf0e
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/8.unity
+    guid: 827bfea0af093ad40a096918aef62344
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/9.unity
+    guid: 9298a7f03ff1ac74d897c5da84311fd9
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/10.unity
+    guid: e2fbfc03ef096794f9e8a0af26a5268f
+  - enabled: 1
+    path: Assets/AxeyWorks/PolyWorks/Demos/Used/11.unity
+    guid: 0b8ded79dd65a004c8f34340fc09fba5
   m_configObjects: {}

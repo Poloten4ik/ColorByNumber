@@ -8,6 +8,7 @@ namespace Assets.Scripts.Coloring
     {
         private Vector3 _oldScale;
         public Vector3 _newScale;
+        public bool _water;
 
         public void StartAnimation()
         {

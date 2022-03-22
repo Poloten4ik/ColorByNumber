@@ -34,12 +34,18 @@ namespace Assets.Scripts.Coloring
 
                         if (materialNumber == _selectedColor._selectedColorNumber && hit.collider.enabled)
                         {
-                            hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
-
                             var animationOnClick = hit.collider.GetComponent<AnimationOnClick>();
 
                             if (animationOnClick != null)
                             {
+                                if (animationOnClick._water)
+                                {
+                                    hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
+                                }
+                                else
+                                {
+                                    hit.collider.GetComponent<MeshRenderer>().material.DOColor(_materialsList._color[materialNumber], 0.5f);
+                                }
                                 animationOnClick.StartAnimation();
                             }
 
@@ -52,7 +58,7 @@ namespace Assets.Scripts.Coloring
                             {
                                 _materialsList._countOfMesh[materialNumber]--;
 
-                                _materialsList.CompletedCheck();
+                                _materialsList.CompletedCheck(_scene);
                                 PlayerPrefs.SetInt(_scene + materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
 
                                 if (_materialsList._countOfMesh[materialNumber] == 0)
@@ -82,11 +88,18 @@ namespace Assets.Scripts.Coloring
 
                         if (materialNumber == _selectedColor._selectedColorNumber)
                         {
-                            hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
                             var animationOnClick = hit.collider.GetComponent<AnimationOnClick>();
 
                             if (animationOnClick != null)
                             {
+                                if (animationOnClick._water)
+                                {
+                                    hit.collider.GetComponent<MeshRenderer>().material = _materialsList._material[materialNumber];
+                                }
+                                else
+                                {
+                                    hit.collider.GetComponent<MeshRenderer>().material.DOColor(_materialsList._color[materialNumber], 0.5f);
+                                }
                                 animationOnClick.StartAnimation();
                             }
 
@@ -100,7 +113,7 @@ namespace Assets.Scripts.Coloring
                             {
                                 _materialsList._countOfMesh[materialNumber]--;
 
-                                _materialsList.CompletedCheck();
+                                _materialsList.CompletedCheck(_scene);
                                 PlayerPrefs.SetInt(_scene + materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
 
                                 if (_materialsList._countOfMesh[materialNumber] == 0)
