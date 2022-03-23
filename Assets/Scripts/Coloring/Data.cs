@@ -18,6 +18,8 @@ namespace Assets.Scripts.Coloring
         }
         public IEnumerator Save()
         {
+            yield return new WaitForSeconds(0.2f);
+
             for (int i = 0; i < _meshes.Length; i++)
             {
                 string meshCount = _onElementClick._scene + _meshes[i].GetComponent<ObjectNumber>()._objectCount.ToString();
@@ -25,7 +27,7 @@ namespace Assets.Scripts.Coloring
 
                 if (PlayerPrefs.HasKey(meshCount))
                 {
-                    yield return new WaitForSeconds(0.1f);
+                    yield return new WaitForSeconds(0.05f);
                     int materialNumber = _meshes[i].GetComponent<ObjectNumber>()._objectNumber;
                     if (!animation._water)
                     {
@@ -39,6 +41,14 @@ namespace Assets.Scripts.Coloring
                     _meshes[i].GetComponent<Collider>().enabled = false;
                 }
             }
+
+            string completedLvl = "completed" + _onElementClick._scene;
+
+            if (PlayerPrefs.HasKey(completedLvl))
+            {
+                _materialsList.Victory();
+            }
+
         }
     }
 }

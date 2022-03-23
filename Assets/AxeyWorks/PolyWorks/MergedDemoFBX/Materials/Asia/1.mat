@@ -36,20 +36,20 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Chop: 0.011
-    - _EmissionDulling: 1.65
+    - _Chop: 0.063
+    - _EmissionDulling: 1
     - _FlatShade: 0
     - _FoamAmount: 0.44
-    - _FoamCutoff: 0.86
+    - _FoamCutoff: 1.67
     - _FoamScale: 100
     - _FoamSpeed: 0.5
-    - _Metallic: 0
+    - _Metallic: 0.098
     - _OverlayFoamNoise: 1
-    - _PerspectiveSwitch: 0
-    - _RefractionScale: 10.6
+    - _PerspectiveSwitch: 1
+    - _RefractionScale: 5
     - _RefractionSpeed: 0.05
     - _RefractionStrength: 0.05
-    - _Smoothness: 0
+    - _Smoothness: 0.192
     - _StaticTexture: 1
     - _TextureMultiply: 0
     - _TextureSize: 1

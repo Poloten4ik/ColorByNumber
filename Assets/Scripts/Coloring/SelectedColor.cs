@@ -53,7 +53,7 @@ namespace Assets.Scripts.Coloring
             _buttonsList[number].transform.SetAsLastSibling();
             _buttonsList[number].GetComponent<Button>().enabled = false;
             _buttonsList[number].GetComponent<Image>().sprite = _completed;
-            _buttonsList[number].GetComponentInChildren<Text>().enabled = false;
+            //_buttonsList[number].GetComponentInChildren<Text>().enabled = false;
 
             //var x = _buttonsList.First();
             //_buttonsList.RemoveAt(number);

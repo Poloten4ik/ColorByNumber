@@ -19,6 +19,7 @@ namespace Assets.Scripts.Coloring
         [SerializeField] private Data _data;
         [SerializeField] private GameObject _scrollColors;
         [SerializeField] private GameObject _downPos;
+        [SerializeField] private GameObject _victory;
 
         void Start()
         {
@@ -60,7 +61,7 @@ namespace Assets.Scripts.Coloring
 
         public IEnumerator UnColor()
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             for (int i = 0; i < _data._meshes.Length; i++)
             {
                 int materialNumber = _data._meshes[i].GetComponent<ObjectNumber>()._objectNumber;
@@ -95,10 +96,20 @@ namespace Assets.Scripts.Coloring
                 else
                 {
                     _data._meshes[i].GetComponent<MeshRenderer>().material = _material[materialNumber];
-                }   
+                }
+
+                if (i + 1 >= _data._meshes.Length)
+                {
+                    Victory();
+                }
             }
         }
 
+
+        public void Victory()
+        {
+            _victory.SetActive(true);
+        }
 
         public void HideScroll()
         {

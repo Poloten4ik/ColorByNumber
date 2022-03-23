@@ -20,7 +20,6 @@ namespace Assets.Scripts.Menu
         public void LoadScenes(int scene)
         {
             _unlocked = _buttons[scene - 1].GetComponentInChildren<MenuData>()._unlocked;
-            print(_unlocked);
 
             if (_unlocked)
             {

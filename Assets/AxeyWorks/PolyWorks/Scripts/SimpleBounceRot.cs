@@ -10,7 +10,7 @@ public class SimpleBounceRot : MonoBehaviour
 
     void Update()
     {
-        float angle = Mathf.Sin(Time.time * timeAdjust) * (rotSpeed * 10);
+        float angle = Mathf.Sin(Time.deltaTime * timeAdjust) * (rotSpeed * 10);
 
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.up);
     }
