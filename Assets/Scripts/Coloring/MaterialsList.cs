@@ -15,6 +15,8 @@ namespace Assets.Scripts.Coloring
         public int _allMeshes;
         public Text _completed;
 
+        public float _progressColoringTime;
+
         [SerializeField] private OnElementClick _onElementClick;
         [SerializeField] private Data _data;
         [SerializeField] private GameObject _scrollColors;
@@ -84,7 +86,7 @@ namespace Assets.Scripts.Coloring
         {
             for (int i = 0; i < _data._meshes.Length; i++)
             {
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(_progressColoringTime);
                 int materialNumber = _data._meshes[i].GetComponent<ObjectNumber>()._objectNumber;
 
                 var animation = _data._meshes[i].GetComponent<AnimationOnClick>();
@@ -108,6 +110,7 @@ namespace Assets.Scripts.Coloring
 
         public void Victory()
         {
+            if (_victory != null)
             _victory.SetActive(true);
         }
 

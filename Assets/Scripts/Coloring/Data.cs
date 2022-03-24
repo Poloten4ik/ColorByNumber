@@ -27,7 +27,7 @@ namespace Assets.Scripts.Coloring
 
                 if (PlayerPrefs.HasKey(meshCount))
                 {
-                    yield return new WaitForSeconds(0.05f);
+                    yield return new WaitForSeconds(_materialsList._progressColoringTime);
                     int materialNumber = _meshes[i].GetComponent<ObjectNumber>()._objectNumber;
                     if (!animation._water)
                     {
