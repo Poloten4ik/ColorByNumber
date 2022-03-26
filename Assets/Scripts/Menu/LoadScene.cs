@@ -10,6 +10,7 @@ namespace Assets.Scripts.Menu
     public class LoadScene : MonoBehaviour
     {
         public bool _unlocked;
+        public ScreenFade _screenFade;
         public Button[] _buttons;
 
         private void Start()
@@ -23,20 +24,20 @@ namespace Assets.Scripts.Menu
 
             if (_unlocked)
             {
-                SceneManager.LoadScene(scene);
-
+                _screenFade.FadeToLevel(scene);
             }
         }
 
-        public void LevelCompleted()
+        public void LevelCompleted() 
         {
             for (int i = 0; i < _buttons.Length; i++)
             {
                 string completedLvl = "completed" + _buttons[i].GetComponentInChildren<MenuData>()._scene;
 
-                if (PlayerPrefs.HasKey(completedLvl))
+                if (PlayerPrefs.HasKey(completedLvl) && i + 1 < _buttons.Length )
                 {
                     _buttons[i + 1].GetComponentInChildren<MenuData>()._unlocked = true;
+                    print(i + 1);
                 }
             }
         }

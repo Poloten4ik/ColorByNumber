@@ -3331,6 +3331,74 @@ Transform:
   m_Father: {fileID: 248571433}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1578971113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8678518206882781, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 556.1843
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -101.94428
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.221764
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678518206882782, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+--- !u!114 &1578971114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8678518206882783, guid: ae26a6e539c9dc7469159a34d215789c, type: 3}
+  m_PrefabInstance: {fileID: 1578971113}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e5b3f19bf86064a8055386f2813b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1727590877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4002,15 +4070,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445086080768179418, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 445086080768179418, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2094990786}
+      objectReference: {fileID: 1578971114}
     - target: {fileID: 445086080768179418, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMenu
+      value: FadeToLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 445086080768179418, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Assets.Scripts.Menu.ScreenFade, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 445086081143878962, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4390,23 +4462,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 445086081238836190, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
   m_PrefabInstance: {fileID: 2094990768}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2094990785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 445086080768179416, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
-  m_PrefabInstance: {fileID: 2094990768}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2094990786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094990785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22157dc2169e3d648940cdb724da3377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2103613079
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,6 @@ namespace Assets.Scripts.Coloring
 {
     public class Data : MonoBehaviour
     {
-        [SerializeField] private SelectedMesh _selectedMesh;
         public  GameObject[] _meshes;
         [SerializeField] private MaterialsList _materialsList;
         [SerializeField] private OnElementClick _onElementClick;
