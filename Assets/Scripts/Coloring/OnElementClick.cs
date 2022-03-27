@@ -9,6 +9,7 @@ namespace Assets.Scripts.Coloring
     {
         [SerializeField] private MaterialsList _materialsList;
         [SerializeField] private SelectedColor _selectedColor;
+        [SerializeField] private ProgressBar _progressBar;
         private Camera _camera;
 
         public string _scene;
@@ -57,13 +58,14 @@ namespace Assets.Scripts.Coloring
                             if (_materialsList._countOfMesh[materialNumber] > 0)
                             {
                                 _materialsList._countOfMesh[materialNumber]--;
-
+                                _progressBar.UpdateBar(materialNumber);
                                 _materialsList.CompletedCheck(_scene);
                                 PlayerPrefs.SetInt(_scene + materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
 
                                 if (_materialsList._countOfMesh[materialNumber] == 0)
                                 {
                                     _selectedColor.ColorCompleted(materialNumber);
+                                    _progressBar.gameObject.SetActive(false);
                                     PlayerPrefsExtensions.SetBool(_scene + materialNumber + " button", true);
                                 }
                             }
@@ -112,13 +114,14 @@ namespace Assets.Scripts.Coloring
                             if (_materialsList._countOfMesh[materialNumber] > 0)
                             {
                                 _materialsList._countOfMesh[materialNumber]--;
-
+                                _progressBar.UpdateBar(materialNumber);
                                 _materialsList.CompletedCheck(_scene);
                                 PlayerPrefs.SetInt(_scene + materialNumber.ToString() + " countOfMesh", _materialsList._countOfMesh[materialNumber]);
 
                                 if (_materialsList._countOfMesh[materialNumber] == 0)
                                 {
                                     _selectedColor.ColorCompleted(materialNumber);
+                                    _progressBar.gameObject.SetActive(false);
                                     PlayerPrefsExtensions.SetBool(_scene + materialNumber + " button", true);
                                 }
                             }

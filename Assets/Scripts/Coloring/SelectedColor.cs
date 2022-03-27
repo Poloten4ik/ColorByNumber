@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 namespace Assets.Scripts.Coloring
 {
@@ -12,6 +13,10 @@ namespace Assets.Scripts.Coloring
         public List<GameObject> _buttonsList;
 
         public ScrollRect _scrollRect;
+        public Transform _progress;
+        public Vector2 _newButtonScale;
+        public Vector2 _defauktButtonScale;
+
 
         public Sprite _selected;
         public Sprite _default;
@@ -21,6 +26,7 @@ namespace Assets.Scripts.Coloring
         public MaterialsList _materialsList;
 
         [SerializeField] private OnElementClick _onElementClick;
+        [SerializeField] private ProgressBar _progressBar;
 
         private void Start()
         {
@@ -44,8 +50,13 @@ namespace Assets.Scripts.Coloring
                 _selectedMesh.DefaultMesh(number, _selectedMesh._countMesh[number]);
             }
 
+            _progress.gameObject.SetActive(true);
             _selectedMesh.HighlightMesh(number, _selectedMesh._countMesh[number]);
-            _buttonsList[number].GetComponent<Image>().sprite = _selected;
+            _progressBar.UpdateProgressBar(number);
+            _progress.SetParent(_buttonsList[number].transform);
+            _progress.localPosition = Vector3.zero;
+         
+            //_buttonsList[number].GetComponent<Image>().sprite = _selected;
         }
 
         public void ColorCompleted(int number)
