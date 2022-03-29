@@ -10,7 +10,9 @@ namespace Assets.Scripts.Coloring
     public class SelectedColor : MonoBehaviour
     {
         public int _selectedColorNumber;
+
         public List<GameObject> _buttonsList;
+        public List<GameObject> _images;
 
         public ScrollRect _scrollRect;
         public Transform _progress;
@@ -28,6 +30,8 @@ namespace Assets.Scripts.Coloring
         [SerializeField] private OnElementClick _onElementClick;
         [SerializeField] private ProgressBar _progressBar;
 
+        private int _currentButton;
+
         private void Start()
         {
             Load();
@@ -42,33 +46,32 @@ namespace Assets.Scripts.Coloring
                 if (item.GetComponent<Button>().enabled)
                 {
                     item.GetComponent<Image>().sprite = _default;
+                    _images[_currentButton].transform.DOScale(_defauktButtonScale, 0);
                 }
+
             }
 
             if (_selectedMesh._isHighlight)
             {
                 _selectedMesh.DefaultMesh(number, _selectedMesh._countMesh[number]);
             }
+            _images[number].transform.DOScale(_newButtonScale, 0);
 
             _progress.gameObject.SetActive(true);
             _selectedMesh.HighlightMesh(number, _selectedMesh._countMesh[number]);
             _progressBar.UpdateProgressBar(number);
             _progress.SetParent(_buttonsList[number].transform);
             _progress.localPosition = Vector3.zero;
-         
-            //_buttonsList[number].GetComponent<Image>().sprite = _selected;
+
+            _currentButton = _selectedColorNumber;
         }
 
         public void ColorCompleted(int number)
         {
             _buttonsList[number].transform.SetAsLastSibling();
             _buttonsList[number].GetComponent<Button>().enabled = false;
-            _buttonsList[number].GetComponent<Image>().sprite = _completed;
-            //_buttonsList[number].GetComponentInChildren<Text>().enabled = false;
-
-            //var x = _buttonsList.First();
-            //_buttonsList.RemoveAt(number);
-            //_buttonsList.Add(x);
+            _images[_currentButton].transform.DOScale(_defauktButtonScale, 0);
+            _images[number].GetComponent<Image>().sprite = _completed;
         }
 
         public void Load()

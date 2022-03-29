@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 namespace Assets.Scripts.CameraController
 {
     public class GameViewScaler : MonoBehaviour
     {
 
-
-
         public void Start()
         {
             var resolution = (double)Screen.width / Screen.height;
             ScaleWithoutAds(resolution);
-
         }
 
         private void ScaleWithoutAds(double resolution)
