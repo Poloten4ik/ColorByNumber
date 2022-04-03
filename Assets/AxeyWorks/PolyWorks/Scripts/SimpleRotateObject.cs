@@ -14,21 +14,6 @@ public class SimpleRotateObject : MonoBehaviour
 
     void Update()
     {
-        if (X)
-        {
-            transform.Rotate(speed * 10 * Time.deltaTime, transform.rotation.y, transform.rotation.z);
-        }
-        else if (Y)
-        {
-            transform.Rotate(transform.rotation.x, speed * 10 * Time.deltaTime, transform.rotation.z);
-        }
-        else if (Z)
-        {
-            transform.Rotate(transform.rotation.x, transform.rotation.y, speed * 10 * Time.deltaTime);
-        }
-        else
-        {
-            transform.Rotate(transform.rotation.x, speed * 10 * Time.deltaTime, transform.rotation.z);
-        }
+        transform.Rotate(transform.rotation.x, speed * 10 * Time.deltaTime, transform.rotation.z);
     }
 }

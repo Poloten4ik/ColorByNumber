@@ -1866,6 +1866,8 @@ GameObject:
   - component: {fileID: 1394908229}
   - component: {fileID: 1394908232}
   - component: {fileID: 1394908233}
+  - component: {fileID: 1394908235}
+  - component: {fileID: 1394908234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1908,7 +1910,7 @@ Camera:
   far clip plane: 1000
   field of view: 133.9
   orthographic: 1
-  orthographic size: 50.6
+  orthographic size: 50
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1987,6 +1989,49 @@ MonoBehaviour:
   _selectedColor: {fileID: 1444344207}
   _progressBar: {fileID: 2099528695}
   _scene: 0scene
+--- !u!114 &1394908234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394908228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fb41b41b7a8624fb1cbcc7a86431bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MouseZoomSpeed: 0.1
+  TouchZoomSpeed: 0.1
+  ZoomMinBound: 10
+  ZoomMaxBound: 50
+--- !u!114 &1394908235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394908228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03a4dc4fb10cf34ebc1d892fa1945c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1394908230}
+  target: {fileID: 543450652142452060}
+  distanceToTarget: 30
+  maxRotationInOneSwipe: 180
+  speed: {x: 0, y: 0, z: 0}
+  avgSpeed: {x: 0, y: 0, z: 0}
+  dragging: 0
+  rotationSpeedTouch: 0.001
+  rotationSpeedMouse: 0.001
+  movingYKoef: 0.01
+  lerpSpeed: 3
+  minYPos: 0
+  maxYPos: 0
+  previousPosition: {x: 0, y: 0, z: 0}
+  refObject: {fileID: 543450652142452060}
 --- !u!224 &1444344206 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3375914681421849438, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
