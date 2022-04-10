@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class Inertia : MonoBehaviour
 {
@@ -7,6 +10,11 @@ public class Inertia : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private float distanceToTarget = 10;
     [SerializeField] [Range(0, 360)] private int maxRotationInOneSwipe = 180;
+
+    [SerializeField] GraphicRaycaster m_Raycaster;
+    PointerEventData m_PointerEventData;
+    [SerializeField] EventSystem m_EventSystem;
+    [SerializeField] RectTransform canvasRect;
 
     public Vector3 speed;
     public Vector3 avgSpeed;
@@ -19,6 +27,7 @@ public class Inertia : MonoBehaviour
 
     public float minYPos;
     public float maxYPos;
+    public float moveYDelta;
 
     Touch theTouch;
 
@@ -28,6 +37,9 @@ public class Inertia : MonoBehaviour
     void Start()
     {
         dragging = false;
+
+        minYPos = transform.position.y - moveYDelta;
+        maxYPos = transform.position.y + moveYDelta;
     }
 
     void Update()
@@ -38,6 +50,22 @@ public class Inertia : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                m_PointerEventData = new PointerEventData(m_EventSystem);
+                //Set the Pointer Event Position to that of the game object
+                m_PointerEventData.position = Input.GetTouch(0).position;
+
+                //Create a list of Raycast Results
+                List<RaycastResult> results = new List<RaycastResult>();
+
+                //Raycast using the Graphics Raycaster and mouse click position
+                m_Raycaster.Raycast(m_PointerEventData, results);
+
+                if (results.Count > 0)
+                {
+                    Debug.Log("Hit " + results[0].gameObject.name);
+                    return;
+                }
+
                 dragging = true;
                 previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
             }
@@ -64,6 +92,22 @@ public class Inertia : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                m_PointerEventData = new PointerEventData(m_EventSystem);
+                //Set the Pointer Event Position to that of the game object
+                m_PointerEventData.position = Input.mousePosition;
+
+                //Create a list of Raycast Results
+                List<RaycastResult> results = new List<RaycastResult>();
+
+                //Raycast using the Graphics Raycaster and mouse click position
+                m_Raycaster.Raycast(m_PointerEventData, results);
+
+                if (results.Count > 0)
+                {
+                    Debug.Log("Hit " + results[0].gameObject.name);
+                    return;
+                }
+
                 dragging = true;
                 previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
             }
@@ -99,10 +143,11 @@ public class Inertia : MonoBehaviour
         cam.transform.Rotate(new Vector3(0, 1, 0), rotationAroundYAxis, Space.World); // <— This is what makes it work!
 
         cam.transform.Translate(new Vector3(0, 0, -distanceToTarget));
+        //transform.position += transform.forward * -distanceToTarget * Time.deltaTime;
 
         //if (dragging)
         //    cam.transform.Translate(new Vector3(0, direction.y * 3, 0));
-            cam.transform.Translate(new Vector3(0, rotationAroundXAxis * -1.0f * movingYKoef, 0));
+        //cam.transform.Translate(new Vector3(0, rotationAroundXAxis * -1.0f * movingYKoef, 0));
         if (cam.transform.position.y < minYPos)
         {
             cam.transform.position = new Vector3(cam.transform.position.x, minYPos, cam.transform.position.z);
