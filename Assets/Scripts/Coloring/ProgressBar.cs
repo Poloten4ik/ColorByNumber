@@ -30,7 +30,7 @@ namespace Assets.Scripts.Coloring
         {
             while (_progressImage.fillAmount < _progress)
             {
-                _progressImage.fillAmount += 0.01f;
+                _progressImage.fillAmount += 0.02f;
                 yield return new WaitForSeconds(0.01f);
             }
         }

@@ -37,6 +37,7 @@ namespace Assets.Scripts.Menu
                 if (PlayerPrefs.HasKey(completedLvl) && i + 1 < _buttons.Length )
                 {
                     _buttons[i + 1].GetComponentInChildren<MenuData>()._unlocked = true;
+                    _buttons[i].GetComponentInChildren<Animation>().Play();
                 }
             }
         }
