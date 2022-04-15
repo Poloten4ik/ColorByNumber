@@ -12,6 +12,7 @@ namespace Assets.Scripts.Menu
         public bool _unlocked;
         public ScreenFade _screenFade;
         public Button[] _buttons;
+        public SpriteRenderer[] _frontSprites;
 
         private void Start()
         {
@@ -38,6 +39,7 @@ namespace Assets.Scripts.Menu
                 {
                     _buttons[i + 1].GetComponentInChildren<MenuData>()._unlocked = true;
                     _buttons[i].GetComponentInChildren<Animation>().Play();
+                    _frontSprites[i].enabled = false;
                 }
             }
         }
