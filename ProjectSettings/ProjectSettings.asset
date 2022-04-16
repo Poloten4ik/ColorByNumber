@@ -775,6 +775,7 @@ PlayerSettings:
     Build: 0
     Collab: 1
     Game Performance: 0
+    Legacy Analytics: 0
     Purchasing: 0
     UDP: 0
     UNet: 1
@@ -792,7 +793,7 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 9f564aac-694d-4496-92e3-2dbe16ac06c9
+  cloudProjectId: cfa0598e-b138-4cb0-a1d2-1a124dc6d2b7
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: ColorByNumber
