@@ -13,6 +13,8 @@ namespace Assets.Scripts.Menu
         public ScreenFade _screenFade;
         public Button[] _buttons;
         public SpriteRenderer[] _frontSprites;
+        public Image[] _lockImage;
+        public Color _pressedColor;
 
         private void Start()
         {
@@ -39,7 +41,13 @@ namespace Assets.Scripts.Menu
                 {
                     _buttons[i + 1].GetComponentInChildren<MenuData>()._unlocked = true;
                     _buttons[i].GetComponentInChildren<Animation>().Play();
+                 
                     _frontSprites[i].enabled = false;
+                    _lockImage[i].enabled = false;
+
+                    ColorBlock cb = _buttons[i + 1].colors;
+                    cb.pressedColor = _pressedColor;
+                    _buttons[i+ 1].colors = cb;
                 }
             }
         }

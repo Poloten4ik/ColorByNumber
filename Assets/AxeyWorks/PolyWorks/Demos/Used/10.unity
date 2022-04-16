@@ -1350,6 +1350,14 @@ PrefabInstance:
       propertyPath: _buttonsList.Array.data[12]
       value: 
       objectReference: {fileID: 49149021}
+    - target: {fileID: 6639498083720242675, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1602823547}
+    - target: {fileID: 6639498083720242675, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeToLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 6778769272262378730, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_Color.b
       value: 0.6392157
