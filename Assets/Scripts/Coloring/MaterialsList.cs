@@ -22,6 +22,7 @@ namespace Assets.Scripts.Coloring
         [SerializeField] private GameObject _scrollColors;
         [SerializeField] private GameObject _downPos;
         [SerializeField] private GameObject _victory;
+        [SerializeField] private GameObject _homeButton;
 
         void Start()
         {
@@ -57,6 +58,7 @@ namespace Assets.Scripts.Coloring
         public void Completed()
         {
             _scrollColors.transform.DOMove(_downPos.transform.position, 0.5f);
+            _homeButton.SetActive(false);
 
             StartCoroutine(UnColor());
         }
