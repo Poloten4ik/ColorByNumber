@@ -16,7 +16,7 @@ MonoBehaviour:
   UpdateColors: 1
   NewColors:
   - {r: 1, g: 1, b: 1, a: 1}
-  - {r: 0.6, g: 0, b: 0, a: 1}
+  - {r: 0.10980392, g: 0.22745098, b: 0, a: 1}
 --- !u!1001 &3893867825079084191
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -18,11 +18,14 @@ namespace Assets.Scripts.Coloring
         public float _progressColoringTime;
 
         [SerializeField] private OnElementClick _onElementClick;
+        [SerializeField] private Inertia _inertia;
+        [SerializeField] private PinchAndZoom _pinchAndZoom;
         [SerializeField] private Data _data;
         [SerializeField] private GameObject _scrollColors;
         [SerializeField] private GameObject _downPos;
         [SerializeField] private GameObject _victory;
         [SerializeField] private GameObject _homeButton;
+        [SerializeField] private Animator _nextButton;
 
         void Start()
         {
@@ -59,7 +62,9 @@ namespace Assets.Scripts.Coloring
         {
             _scrollColors.transform.DOMove(_downPos.transform.position, 0.5f);
             _homeButton.SetActive(false);
-
+            _inertia.enabled = false;
+            _pinchAndZoom.enabled = false;
+         
             StartCoroutine(UnColor());
         }
 
@@ -105,10 +110,15 @@ namespace Assets.Scripts.Coloring
                 if (i + 1 >= _data._meshes.Length)
                 {
                     Victory();
+                    _nextButton.enabled = true;
                 }
             }
         }
 
+        public void NextScreen()
+        {
+            _nextButton.SetTrigger("Pressed");
+        }
 
         public void Victory()
         {

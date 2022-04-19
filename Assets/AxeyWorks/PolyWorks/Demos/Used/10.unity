@@ -1607,6 +1607,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4798835512199515592, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
   m_PrefabInstance: {fileID: 1397170135}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1397170165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8111978714835364089, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+  m_PrefabInstance: {fileID: 1397170135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1507149331 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2050027528726724646, guid: c653ca3172fd074478a23cbe5c13286c, type: 3}
@@ -2653,6 +2658,10 @@ PrefabInstance:
       propertyPath: _completed
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
+      propertyPath: _homeButton
+      value: 
+      objectReference: {fileID: 1397170165}
     - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
       propertyPath: _scrollColors
       value: 

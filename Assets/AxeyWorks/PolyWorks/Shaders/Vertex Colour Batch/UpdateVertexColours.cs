@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
-namespace Axeyworks
+namespace OffAxisStudios
 {
     [ExecuteInEditMode]
     [System.Serializable]

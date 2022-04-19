@@ -654,6 +654,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
+      propertyPath: _homeButton
+      value: 
+      objectReference: {fileID: 1382675837}
+    - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
       propertyPath: _scrollColors
       value: 
       objectReference: {fileID: 1382675834}
@@ -3590,6 +3594,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5a796a2e36d0542af057d14325ddc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1382675837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8111978714835364089, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+  m_PrefabInstance: {fileID: 1382675831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1382675839 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3682309063006833610, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}

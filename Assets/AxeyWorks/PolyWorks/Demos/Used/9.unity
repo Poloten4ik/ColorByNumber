@@ -727,6 +727,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
+      propertyPath: _homeButton
+      value: 
+      objectReference: {fileID: 1099207160}
+    - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
       propertyPath: _scrollColors
       value: 
       objectReference: {fileID: 1099207135}
@@ -3067,6 +3071,11 @@ GameObject:
 --- !u!1 &1099207159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4798835512199515592, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+  m_PrefabInstance: {fileID: 1099207132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1099207160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8111978714835364089, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
   m_PrefabInstance: {fileID: 1099207132}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1099207161 stripped

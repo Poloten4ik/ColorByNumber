@@ -1497,6 +1497,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4353921267201009673, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
   m_PrefabInstance: {fileID: 505738704}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &505738723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8111978714835364089, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+  m_PrefabInstance: {fileID: 505738704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &590808473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,6 +3196,10 @@ PrefabInstance:
       propertyPath: _completed
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
+      propertyPath: _homeButton
+      value: 
+      objectReference: {fileID: 505738723}
     - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
       propertyPath: _scrollColors
       value: 
