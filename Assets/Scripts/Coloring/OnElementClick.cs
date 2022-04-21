@@ -66,7 +66,7 @@ namespace Assets.Scripts.Coloring
                                 {
                                     _selectedColor.ColorCompleted(materialNumber);
                                     _progressBar.gameObject.SetActive(false);
-                                    PlayerPrefsExtensions.SetBool(_scene + materialNumber + " button", true);
+                                    PlayerPrefsExtensions.SetBool(_scene + materialNumber.ToString() + " button", true);
                                 }
                             }
                         }

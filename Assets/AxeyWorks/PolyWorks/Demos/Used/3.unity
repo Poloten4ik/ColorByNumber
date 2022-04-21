@@ -5047,7 +5047,7 @@ MonoBehaviour:
   _materialsList: {fileID: 1161756803}
   _selectedColor: {fileID: 1669673884}
   _progressBar: {fileID: 1669673885}
-  _scene: 2scene
+  _scene: 3scene
 --- !u!114 &2050027529162152341
 MonoBehaviour:
   m_ObjectHideFlags: 0

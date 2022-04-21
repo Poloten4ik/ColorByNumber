@@ -7,9 +7,10 @@ namespace Assets.Scripts.Coloring
     public class MenuData : MonoBehaviour
     {
         [SerializeField] private GameObject[] _meshes;
-        [SerializeField] private Material[] _materialsListMenu;
+        public Material[] _materialsListMenu;
         public string _scene;
         public bool _unlocked;
+        public bool _completed;
 
         void Start()
         {
