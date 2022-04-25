@@ -133,6 +133,7 @@ namespace Assets.Scripts.Coloring
             if (PlayerPrefs.HasKey(hide))
             {
                 _scrollColors.SetActive(false);
+                Completed();
             }
         }
     }

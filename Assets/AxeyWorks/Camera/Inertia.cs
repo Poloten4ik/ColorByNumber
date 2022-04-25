@@ -8,7 +8,6 @@ public class Inertia : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     [SerializeField] private Transform target;
-    [SerializeField] private float distanceToTarget = 10;
     [SerializeField] [Range(0, 360)] private int maxRotationInOneSwipe = 180;
 
     [SerializeField] GraphicRaycaster m_Raycaster;
@@ -25,21 +24,24 @@ public class Inertia : MonoBehaviour
     public float movingYKoef;
     public float lerpSpeed;
 
-    public float minYPos;
-    public float maxYPos;
+    private float minYPos;
+    private float maxYPos;
     public float moveYDelta;
+    public float swipeMinMove = 2;
 
     Touch theTouch;
 
     public Vector3 previousPosition;
+    public Vector3 startPosition;
     public Transform refObject;
-
+    public Vector3 startTouchPosition;
     void Start()
     {
         dragging = false;
 
         minYPos = transform.position.y - moveYDelta;
         maxYPos = transform.position.y + moveYDelta;
+
     }
 
     void Update()
@@ -60,16 +62,25 @@ public class Inertia : MonoBehaviour
                 //Raycast using the Graphics Raycaster and mouse click position
                 m_Raycaster.Raycast(m_PointerEventData, results);
 
-                if (results.Count > 0)
+                if (results.Count < 0)
                 {
                     Debug.Log("Hit " + results[0].gameObject.name);
                     return;
                 }
 
-                dragging = true;
-                previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+                startTouchPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+                //dragging = true;
+                //previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
             }
-            if (Input.touchCount == 1 && dragging)
+            if (Input.touchCount == 1 && !dragging)
+            {
+                Vector3 currentPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+                float distance = Vector3.Distance(startPosition, currentPosition);
+
+                if (distance > swipeMinMove)
+                    dragging = true;
+            }
+            else if (Input.touchCount == 1 && dragging)
             {
                 theTouch = Input.GetTouch(0);
                 speed = new Vector3(theTouch.deltaPosition.x, theTouch.deltaPosition.y, 0);
@@ -108,11 +119,20 @@ public class Inertia : MonoBehaviour
                     return;
                 }
 
-                dragging = true;
-                previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+                startTouchPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+                //dragging = true;
+                //previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
             }
 
-            if (Input.GetMouseButton(0) && dragging)
+            if (Input.GetMouseButton(0) && !dragging)
+            {
+                Vector3 currentPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+                float distance = Vector3.Distance(startPosition, currentPosition);
+
+                if (distance > swipeMinMove)
+                    dragging = true;
+            }
+            else if(Input.GetMouseButton(0) && dragging)
             {
                 speed = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0);
                 avgSpeed = Vector3.Lerp(avgSpeed, speed, Time.deltaTime * 5);
@@ -138,16 +158,12 @@ public class Inertia : MonoBehaviour
         float rotationAroundYAxis = speed.x * rotationSpeed; // camera moves horizontally
         float rotationAroundXAxis = speed.y * rotationSpeed; // camera moves vertically
 
-        cam.transform.position = new Vector3(target.position.x, cam.transform.position.y, target.position.z);
-
-        cam.transform.Rotate(new Vector3(0, 1, 0), rotationAroundYAxis, Space.World); // <— This is what makes it work!
-
-        cam.transform.Translate(new Vector3(0, 0, -distanceToTarget));
-        //transform.position += transform.forward * -distanceToTarget * Time.deltaTime;
+        cam.transform.RotateAround(target.position, new Vector3(0, 1, 0), rotationAroundYAxis); // <— This is what makes it work!
+        
 
         //if (dragging)
         //    cam.transform.Translate(new Vector3(0, direction.y * 3, 0));
-        //cam.transform.Translate(new Vector3(0, rotationAroundXAxis * -1.0f * movingYKoef, 0));
+        cam.transform.Translate(new Vector3(0, rotationAroundXAxis * -1.0f * movingYKoef, 0), Space.World);
         if (cam.transform.position.y < minYPos)
         {
             cam.transform.position = new Vector3(cam.transform.position.x, minYPos, cam.transform.position.z);

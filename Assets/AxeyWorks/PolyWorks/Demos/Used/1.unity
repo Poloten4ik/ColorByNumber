@@ -2584,7 +2584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1394908230}
   target: {fileID: 543450652142452060}
-  distanceToTarget: 60
   maxRotationInOneSwipe: 180
   m_Raycaster: {fileID: 1615565970568117997}
   m_EventSystem: {fileID: 526896520}
@@ -2594,13 +2593,14 @@ MonoBehaviour:
   dragging: 0
   rotationSpeedTouch: 0.03
   rotationSpeedMouse: 15
-  movingYKoef: 0.01
+  movingYKoef: 0.1
   lerpSpeed: 3
-  minYPos: 0
-  maxYPos: 0
-  moveYDelta: 0
+  moveYDelta: 10
+  swipeMinMove: 0.5
   previousPosition: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
   refObject: {fileID: 543450652142452060}
+  startTouchPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1573242395
 GameObject:
   m_ObjectHideFlags: 0
@@ -13500,7 +13500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9007082287298893991, guid: 837fdc579107eac4686b8cc28a9b184d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9007082287298893991, guid: 837fdc579107eac4686b8cc28a9b184d, type: 3}
       propertyPath: m_AnchorMax.x

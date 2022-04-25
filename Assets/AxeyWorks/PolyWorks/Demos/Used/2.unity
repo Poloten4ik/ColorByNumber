@@ -303,13 +303,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316339374}
-  m_LocalRotation: {x: -0.062380753, y: 0.20946892, z: -0.90514576, w: -0.364613}
-  m_LocalPosition: {x: -150.78122, y: 0.0874939, z: 673.7892}
+  m_LocalRotation: {x: 0.02147118, y: 0.21750283, z: -0.9758118, w: 0.004785802}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2050027530405400631}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -229, y: -320.68, z: -766}
+  m_LocalEulerAnglesHint: {x: -205.131, y: -182.521, z: 0}
 --- !u!114 &316339377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,7 +1031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1715009609440170086, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1803910393423213211, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_Color.b
@@ -1448,6 +1448,10 @@ PrefabInstance:
     - target: {fileID: 8109682212697468816, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_Color.r
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111978714835364088, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9031523047688007671, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_Color.b
@@ -2965,7 +2969,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 2050027530405400630}
   target: {fileID: 1599073865691105617}
-  distanceToTarget: 60
   maxRotationInOneSwipe: 180
   m_Raycaster: {fileID: 1332313421}
   m_EventSystem: {fileID: 2120263421}
@@ -2977,11 +2980,12 @@ MonoBehaviour:
   rotationSpeedMouse: 15
   movingYKoef: 0.01
   lerpSpeed: 3
-  minYPos: 0
-  maxYPos: 0
   moveYDelta: 0
+  swipeMinMove: 0.7
   previousPosition: {x: 0, y: 0, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
   refObject: {fileID: 1599073865691105617}
+  startTouchPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2050027530405400635
 MonoBehaviour:
   m_ObjectHideFlags: 0
