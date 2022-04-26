@@ -1,3 +1,4 @@
+using Assets.Scripts.CameraController;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,12 +21,19 @@ namespace Assets.Scripts.Coloring
         [SerializeField] private OnElementClick _onElementClick;
         [SerializeField] private Inertia _inertia;
         [SerializeField] private PinchAndZoom _pinchAndZoom;
+        [SerializeField] private GameViewScaler _gameViewScaler;
         [SerializeField] private Data _data;
         [SerializeField] private GameObject _scrollColors;
         [SerializeField] private GameObject _downPos;
         [SerializeField] private GameObject _victory;
         [SerializeField] private GameObject _homeButton;
+        [SerializeField] private GameObject _buttonNext;
         [SerializeField] private Animator _nextButton;
+
+        [SerializeField] private Camera _cameraMain;
+        [SerializeField] private Camera _cameraFinish;
+
+        public float _zoomSizeFinish;
 
         void Start()
         {
@@ -62,9 +70,22 @@ namespace Assets.Scripts.Coloring
         {
             _scrollColors.transform.DOMove(_downPos.transform.position, 0.5f);
             _homeButton.SetActive(false);
-            _inertia.enabled = false;
+            _cameraMain.transform.DOMove(_cameraFinish.transform.position, 2f);
+            _cameraMain.transform.DORotate(_cameraFinish.transform.rotation.eulerAngles, 2f);
             _pinchAndZoom.enabled = false;
-         
+            _inertia.enabled = false;
+
+            StartCoroutine(ZoomUpdate());
+        }
+
+        public IEnumerator ZoomUpdate()
+        {
+            while (_cameraMain.orthographicSize < _gameViewScaler._maxSize)
+            {
+                _cameraMain.orthographicSize += 0.5f;
+                yield return new WaitForSeconds(0.01f);
+            }
+
             StartCoroutine(UnColor());
         }
 
@@ -110,6 +131,7 @@ namespace Assets.Scripts.Coloring
                 if (i + 1 >= _data._meshes.Length)
                 {
                     Victory();
+                    _buttonNext.SetActive(true);
                     _nextButton.enabled = true;
                 }
             }
@@ -123,7 +145,7 @@ namespace Assets.Scripts.Coloring
         public void Victory()
         {
             if (_victory != null)
-            _victory.SetActive(true);
+                _victory.SetActive(true);
         }
 
         public void HideScroll()

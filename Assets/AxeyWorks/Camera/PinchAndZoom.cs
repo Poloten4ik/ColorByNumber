@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.CameraController;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,12 +9,15 @@ public class PinchAndZoom : MonoBehaviour
     public float TouchZoomSpeed = 0.1f;
     public float ZoomMinBound = 1;
     public float ZoomMaxBound = 2;
+    public GameViewScaler _gameViewScaler;
     Camera cam;
+
 
     // Use this for initialization
     void Start()
     {
         cam = GetComponent<Camera>();
+        ZoomMaxBound = cam.orthographicSize;
     }
 
     void Update()
@@ -47,20 +51,18 @@ public class PinchAndZoom : MonoBehaviour
             Zoom(scroll, MouseZoomSpeed);
         }
 
-
-
         if (cam.orthographicSize < ZoomMinBound)
         {
             cam.orthographicSize = 1;
         }
         else
-        if (cam.orthographicSize > ZoomMaxBound)
+            if (cam.orthographicSize > ZoomMaxBound)
         {
             cam.orthographicSize = 2;
         }
     }
 
-    void Zoom(float deltaMagnitudeDiff, float speed)
+    public void Zoom(float deltaMagnitudeDiff, float speed)
     {
 
         //cam.fieldOfView += deltaMagnitudeDiff * speed;
@@ -68,7 +70,5 @@ public class PinchAndZoom : MonoBehaviour
         Debug.Log("cam.orthographicSize =" + cam.orthographicSize);
         // set min and max value of Clamp function upon your requirement
         cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, ZoomMinBound, ZoomMaxBound);
-
-        
     }
 }

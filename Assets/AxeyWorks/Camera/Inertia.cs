@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class Inertia : MonoBehaviour
 {
-    [SerializeField] private Camera cam;
+    public Camera cam;
     [SerializeField] private Transform target;
     [SerializeField] [Range(0, 360)] private int maxRotationInOneSwipe = 180;
 
@@ -27,7 +27,7 @@ public class Inertia : MonoBehaviour
     private float minYPos;
     private float maxYPos;
     public float moveYDelta;
-    public float swipeMinMove = 2;
+    public float swipeMinMove = 0.3f;
 
     Touch theTouch;
 
@@ -43,7 +43,7 @@ public class Inertia : MonoBehaviour
         maxYPos = transform.position.y + moveYDelta;
 
     }
-
+    private bool mIgnoreThisTouch = false;
     void Update()
     {
         float rotationSpeed = 0;
@@ -62,20 +62,28 @@ public class Inertia : MonoBehaviour
                 //Raycast using the Graphics Raycaster and mouse click position
                 m_Raycaster.Raycast(m_PointerEventData, results);
 
-                if (results.Count < 0)
+                if (results.Count > 0)
                 {
                     Debug.Log("Hit " + results[0].gameObject.name);
+                    mIgnoreThisTouch = true;
                     return;
                 }
+                else
+                    mIgnoreThisTouch = false;
 
                 startTouchPosition = cam.ScreenToViewportPoint(Input.mousePosition);
                 //dragging = true;
                 //previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
             }
+
+            if (mIgnoreThisTouch)
+                return;
+
             if (Input.touchCount == 1 && !dragging)
             {
+
                 Vector3 currentPosition = cam.ScreenToViewportPoint(Input.mousePosition);
-                float distance = Vector3.Distance(startPosition, currentPosition);
+                float distance = Vector3.Distance(startTouchPosition, currentPosition);
 
                 if (distance > swipeMinMove)
                     dragging = true;
@@ -116,23 +124,29 @@ public class Inertia : MonoBehaviour
                 if (results.Count > 0)
                 {
                     Debug.Log("Hit " + results[0].gameObject.name);
+                    mIgnoreThisTouch = true;
                     return;
                 }
+                else
+                    mIgnoreThisTouch = false;
 
                 startTouchPosition = cam.ScreenToViewportPoint(Input.mousePosition);
                 //dragging = true;
                 //previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
             }
 
+            if (mIgnoreThisTouch)
+                return;
+
             if (Input.GetMouseButton(0) && !dragging)
             {
                 Vector3 currentPosition = cam.ScreenToViewportPoint(Input.mousePosition);
-                float distance = Vector3.Distance(startPosition, currentPosition);
+                float distance = Vector3.Distance(startTouchPosition, currentPosition);
 
                 if (distance > swipeMinMove)
                     dragging = true;
             }
-            else if(Input.GetMouseButton(0) && dragging)
+            else if (Input.GetMouseButton(0) && dragging)
             {
                 speed = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0);
                 avgSpeed = Vector3.Lerp(avgSpeed, speed, Time.deltaTime * 5);
@@ -159,7 +173,7 @@ public class Inertia : MonoBehaviour
         float rotationAroundXAxis = speed.y * rotationSpeed; // camera moves vertically
 
         cam.transform.RotateAround(target.position, new Vector3(0, 1, 0), rotationAroundYAxis); // <— This is what makes it work!
-        
+
 
         //if (dragging)
         //    cam.transform.Translate(new Vector3(0, direction.y * 3, 0));

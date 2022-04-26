@@ -44,6 +44,7 @@ namespace Assets.Scripts.Menu
 
             else if (_unlocked && _completed)
             {
+                _completedWindow.SetActive(true); ;
                 _completedWindow.transform.DOMove(_completedPosIn.position, 0.5f).SetEase(Ease.InOutCubic);
                 _fade.enabled = true;
                 _fadeImage.enabled = true;
