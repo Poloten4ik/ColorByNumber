@@ -3312,7 +3312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _materialsList: {fileID: 410023322}
   _selectedColor: {fileID: 5895054493551411639}
-  _progressBar: {fileID: 0}
+  _progressBar: {fileID: 1744332228447030692}
   _scene: 2scene
 --- !u!114 &2050027530405400634
 MonoBehaviour:
@@ -3335,7 +3335,7 @@ MonoBehaviour:
   speed: {x: 0, y: 0, z: 0}
   avgSpeed: {x: 0, y: 0, z: 0}
   dragging: 0
-  rotationSpeedTouch: 0.02
+  rotationSpeedTouch: 0.1
   rotationSpeedMouse: 15
   movingYKoef: 0.01
   lerpSpeed: 3
@@ -3357,7 +3357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72fb41b41b7a8624fb1cbcc7a86431bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseZoomSpeed: 0.1
+  MouseZoomSpeed: 10
   TouchZoomSpeed: 0.005
   ZoomMinBound: 10
   ZoomMaxBound: 50

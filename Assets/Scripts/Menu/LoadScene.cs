@@ -26,7 +26,8 @@ namespace Assets.Scripts.Menu
         public Button _fade;
         public Image _fadeImage;
 
-        private void Start()
+
+        private void Awake()
         {
             LevelCompleted();
             CheckUnlock();
@@ -54,23 +55,25 @@ namespace Assets.Scripts.Menu
             }
         }
 
-        public void LevelCompleted() 
+        public void LevelCompleted()
         {
             for (int i = 0; i < _buttons.Length; i++)
             {
                 string completedLvl = "completed" + _buttons[i].GetComponentInChildren<MenuData>()._scene;
 
-                if (PlayerPrefs.HasKey(completedLvl) && i + 1 < _buttons.Length )
+                if (PlayerPrefs.HasKey(completedLvl) && i + 1 < _buttons.Length)
                 {
                     _buttons[i + 1].GetComponentInChildren<MenuData>()._unlocked = true;
                     _buttons[i].GetComponentInChildren<MenuData>()._completed = true;
-                    _buttons[i].GetComponentInChildren<Animation>().Play();
-
+                   // _buttons[i].GetComponentInChildren<Animation>().Play();
                     _buttons[i + 1].GetComponent<Animator>().enabled = true;
- 
-                    PlayerPrefsExtensions.SetBool("unlock" + _buttons[i + 1].GetComponentInChildren<MenuData>()._scene, true);
 
-                    print("unlock" + _buttons[i + 1].GetComponentInChildren<MenuData>()._scene);
+                    PlayerPrefsExtensions.SetBool("unlock" + _buttons[i + 1].GetComponentInChildren<MenuData>()._scene, true);
+                    
+                }
+                else if (PlayerPrefs.HasKey(completedLvl) && i + 1 == _buttons.Length)
+                {
+                    _buttons[i].GetComponentInChildren<MenuData>()._completed = true;
                 }
             }
         }
@@ -81,16 +84,14 @@ namespace Assets.Scripts.Menu
             {
                 string unlocked = "unlock" + _buttons[i].GetComponentInChildren<MenuData>()._scene;
 
-                if (PlayerPrefs.HasKey(unlocked) && i + 1 < _buttons.Length)
+                if (PlayerPrefs.HasKey(unlocked))
                 {
                     _buttons[i].GetComponentInChildren<MenuData>()._unlocked = true;
-
                     _frontSprites[i - 1].enabled = false;
                     _lockImage[i - 1].enabled = false;
                 }
             }
         }
-
 
         public void WindowOut()
         {

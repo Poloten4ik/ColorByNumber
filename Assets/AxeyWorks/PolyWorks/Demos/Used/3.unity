@@ -1377,13 +1377,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592595629}
-  m_LocalRotation: {x: 0.092752494, y: -0.9017694, z: 0.24162842, w: 0.34615695}
-  m_LocalPosition: {x: 32.9, y: 25.7, z: 37.061172}
+  m_LocalRotation: {x: 0.094857536, y: -0.89871436, z: 0.24080983, w: 0.35401306}
+  m_LocalPosition: {x: 32.9, y: 23, z: 37.061172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 30, y: -138, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: -137, z: 0}
 --- !u!1001 &614956906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6498,7 +6498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _materialsList: {fileID: 1161756803}
   _selectedColor: {fileID: 5895054494015655783}
-  _progressBar: {fileID: 0}
+  _progressBar: {fileID: 1913369171}
   _scene: 3scene
 --- !u!114 &2050027529162152341
 MonoBehaviour:
@@ -6570,14 +6570,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050027529162152345}
-  m_LocalRotation: {x: 0.092752494, y: -0.9017694, z: 0.24162842, w: 0.34615695}
-  m_LocalPosition: {x: 32.9, y: 25.7, z: 37.061172}
+  m_LocalRotation: {x: 0.094857536, y: -0.89871436, z: 0.24080983, w: 0.35401306}
+  m_LocalPosition: {x: 32.9, y: 23, z: 37.061172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 316339376}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: -138, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: -137, z: 0}
 --- !u!20 &2050027529162152347
 Camera:
   m_ObjectHideFlags: 0
@@ -6605,7 +6605,7 @@ Camera:
   far clip plane: 1000
   field of view: 133.9
   orthographic: 1
-  orthographic size: 50
+  orthographic size: 55
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6659,7 +6659,7 @@ MonoBehaviour:
   speed: {x: 0, y: 0, z: 0}
   avgSpeed: {x: 0, y: 0, z: 0}
   dragging: 0
-  rotationSpeedTouch: 0.03
+  rotationSpeedTouch: 0.1
   rotationSpeedMouse: 15
   movingYKoef: 0.1
   lerpSpeed: 3

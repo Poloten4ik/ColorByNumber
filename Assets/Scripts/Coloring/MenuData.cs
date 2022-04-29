@@ -15,7 +15,9 @@ namespace Assets.Scripts.Coloring
         void Start()
         {
             if (_unlocked)
-            MenuSave();
+            {
+                MenuSave();
+            }
         }
 
         public void MenuSave()
@@ -23,7 +25,7 @@ namespace Assets.Scripts.Coloring
             for (int i = 0; i < _meshes.Length; i++)
             {
                 string meshCount = _scene + _meshes[i].GetComponent<ObjectNumber>()._objectCount.ToString();
-
+           
                 if (PlayerPrefs.HasKey(meshCount))
                 {
                     int materialNumber = _meshes[i].GetComponent<ObjectNumber>()._objectNumber;

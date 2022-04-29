@@ -1167,13 +1167,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316339374}
-  m_LocalRotation: {x: 0.119790174, y: 0.25517648, z: -0.9339268, w: -0.2198092}
-  m_LocalPosition: {x: -149.46051, y: 26.276138, z: 676.6404}
+  m_LocalRotation: {x: 0.15913148, y: 0.09547017, z: -0.98250884, w: 0.015462771}
+  m_LocalPosition: {x: -149.46051, y: 26.276138, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 708799732}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -229, y: -348, z: -766}
+  m_LocalEulerAnglesHint: {x: -191.1, y: -198.4, z: 0}
 --- !u!1 &336863642
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,7 +2732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2050027528726724649, guid: c653ca3172fd074478a23cbe5c13286c, type: 3}
       propertyPath: orthographic size
-      value: 46.81
+      value: 50.1
       objectReference: {fileID: 0}
     - target: {fileID: 2050027528726724649, guid: c653ca3172fd074478a23cbe5c13286c, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -2817,7 +2817,7 @@ MonoBehaviour:
   speed: {x: 0, y: 0, z: 0}
   avgSpeed: {x: 0, y: 0, z: 0}
   dragging: 0
-  rotationSpeedTouch: 0.03
+  rotationSpeedTouch: 0.1
   rotationSpeedMouse: 15
   movingYKoef: 0.1
   lerpSpeed: 3
@@ -4996,11 +4996,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1878628079840497401, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: _2280ResolutionSize
-      value: 60
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 1878628079840497401, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: _2560ResolutionSize
-      value: 45
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 2448806904376397803, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5449,6 +5449,22 @@ PrefabInstance:
     - target: {fileID: 6930420505619759677, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303094891369122121, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 216109120}
+    - target: {fileID: 7303094891369122121, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1578971114}
+    - target: {fileID: 7303094891369122121, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303094891369122121, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: FadeToLevel
       objectReference: {fileID: 0}
     - target: {fileID: 7651658727535085413, guid: bdfebf6849dbddf419ee1c8cf7c1f75d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6556,7 +6572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4903504945077806874, guid: f38b708435772574189d6dee7af84941, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 4903504945077806874, guid: f38b708435772574189d6dee7af84941, type: 3}
       propertyPath: m_LocalPosition.z

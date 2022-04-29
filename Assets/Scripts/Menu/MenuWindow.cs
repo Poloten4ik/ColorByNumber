@@ -20,15 +20,15 @@ namespace Assets.Scripts.Menu
 
         public void RestartScene()
         {
-            for (int i = 0; i < _meshes[0]; i++)
+            for (int i = 0; i < _meshes[_buttonNumber]; i++)
             {
                 string meshCount = _sceneNumber + "scene" + i.ToString();
                 PlayerPrefs.DeleteKey(meshCount);
                 PlayerPrefs.DeleteKey("completed" + _sceneNumber + "scene");
                 UpdateCountMeshes();
-
-                _screenFade.FadeToLevel(_sceneNumber);
             }
+
+            _screenFade.FadeToLevel(_sceneNumber);
         }
 
         public void UpdateCountMeshes()

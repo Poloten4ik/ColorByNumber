@@ -1333,11 +1333,11 @@ MonoBehaviour:
   speed: {x: 0, y: 0, z: 0}
   avgSpeed: {x: 0, y: 0, z: 0}
   dragging: 0
-  rotationSpeedTouch: 0.03
+  rotationSpeedTouch: 0.1
   rotationSpeedMouse: 15
   movingYKoef: 0.1
-  lerpSpeed: 3
-  moveYDelta: 10
+  lerpSpeed: 10
+  moveYDelta: 4
   swipeMinMove: 0.3
   previousPosition: {x: 0, y: 0, z: 0}
   startPosition: {x: 0, y: 0, z: 0}
