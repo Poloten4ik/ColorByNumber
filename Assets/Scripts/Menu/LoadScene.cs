@@ -65,7 +65,6 @@ namespace Assets.Scripts.Menu
                 {
                     _buttons[i + 1].GetComponentInChildren<MenuData>()._unlocked = true;
                     _buttons[i].GetComponentInChildren<MenuData>()._completed = true;
-                   // _buttons[i].GetComponentInChildren<Animation>().Play();
                     _buttons[i + 1].GetComponent<Animator>().enabled = true;
 
                     PlayerPrefsExtensions.SetBool("unlock" + _buttons[i + 1].GetComponentInChildren<MenuData>()._scene, true);

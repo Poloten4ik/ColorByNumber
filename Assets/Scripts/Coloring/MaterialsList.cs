@@ -1,4 +1,5 @@
 using Assets.Scripts.CameraController;
+using Assets.Scripts.Victory;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace Assets.Scripts.Coloring
         [SerializeField] private OnElementClick _onElementClick;
         [SerializeField] private Inertia _inertia;
         [SerializeField] private PinchAndZoom _pinchAndZoom;
+        [SerializeField] private Rotator _rotator;
         [SerializeField] private GameViewScaler _gameViewScaler;
         [SerializeField] private Data _data;
         [SerializeField] private GameObject _scrollColors;
@@ -145,7 +147,11 @@ namespace Assets.Scripts.Coloring
         public void Victory()
         {
             if (_victory != null)
+            {
                 _victory.SetActive(true);
+                _rotator.enabled = true;
+            }
+       
         }
 
         public void HideScroll()
