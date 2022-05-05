@@ -36,34 +36,34 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Chop: 0.171
-    - _EmissionDulling: 1.65
+    - _Chop: 0.063
+    - _EmissionDulling: 1
     - _FlatShade: 0
     - _FoamAmount: 0.44
-    - _FoamCutoff: 2.8
+    - _FoamCutoff: 1.67
     - _FoamScale: 100
     - _FoamSpeed: 0.5
-    - _Metallic: 0.092
+    - _Metallic: 0.098
     - _OverlayFoamNoise: 1
-    - _PerspectiveSwitch: 0
-    - _RefractionScale: 7.1
+    - _PerspectiveSwitch: 1
+    - _RefractionScale: 5
     - _RefractionSpeed: 0.05
     - _RefractionStrength: 0.05
-    - _Smoothness: 0.153
+    - _Smoothness: 0.192
     - _StaticTexture: 1
     - _TextureMultiply: 0
     - _TextureSize: 1
     - _TintTextureAlpha: 0
     - _UseTextureOverlay: 0
-    - _WaterAlpha: 0.415
+    - _WaterAlpha: 0.422
     - _WaterDepth: -0.21
     m_Colors:
     - _DeepWater: {r: 0, g: 0.67058825, b: 1, a: 0.7882353}
-    - _FoamColour: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
-    - _ShallowWater: {r: 0.60784316, g: 0.95691764, b: 1, a: 0.80784315}
+    - _FoamColour: {r: 1, g: 1, b: 1, a: 1}
+    - _ShallowWater: {r: 0.32395867, g: 0.87525815, b: 0.9433962, a: 0.80784315}
     - _TextureColour1: {r: 1, g: 1, b: 1, a: 0.5882353}
     - _TextureColour2: {r: 0, g: 0.7254902, b: 1, a: 0.5882353}
-    - _TextureWaterTint: {r: 0, g: 0.737255, b: 0.71267027, a: 0}
+    - _TextureWaterTint: {r: 0, g: 0.7372549, b: 0.71267027, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4581545503388329930
 MonoBehaviour:

@@ -3130,6 +3130,26 @@ PrefabInstance:
       propertyPath: _materialsList
       value: 
       objectReference: {fileID: 683164822}
+    - target: {fileID: 314409879440882201, guid: a7431ff31abfdb244abd7955f253e802, type: 3}
+      propertyPath: _defaultColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314409879440882201, guid: a7431ff31abfdb244abd7955f253e802, type: 3}
+      propertyPath: _defaultColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314409879440882201, guid: a7431ff31abfdb244abd7955f253e802, type: 3}
+      propertyPath: _defaultColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314409879440882201, guid: a7431ff31abfdb244abd7955f253e802, type: 3}
+      propertyPath: _defaultColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314409879440882201, guid: a7431ff31abfdb244abd7955f253e802, type: 3}
+      propertyPath: _highlightColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 314409879440882202, guid: a7431ff31abfdb244abd7955f253e802, type: 3}
       propertyPath: m_RootOrder
       value: 4

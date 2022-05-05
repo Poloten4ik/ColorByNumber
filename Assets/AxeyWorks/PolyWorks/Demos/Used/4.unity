@@ -6816,6 +6816,8 @@ MonoBehaviour:
   _isHighlight: 0
   _countMesh: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   _materialsList: {fileID: 554325194}
+  _highlightColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1275130420
 GameObject:
   m_ObjectHideFlags: 0

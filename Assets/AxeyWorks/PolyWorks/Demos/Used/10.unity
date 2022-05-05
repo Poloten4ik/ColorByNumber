@@ -4134,7 +4134,7 @@ PrefabInstance:
     - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
       propertyPath: _material.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2de2b3fd84cd86e43946a948d7fc31f1, type: 2}
+      objectReference: {fileID: 2100000, guid: b539ac6e7f2ef49469fb6691b4e83bfb, type: 2}
     - target: {fileID: 8653985138718957960, guid: 717e101cc4b8b554dae4f5459aed2a2a, type: 3}
       propertyPath: _material.Array.data[1]
       value: 
@@ -7470,6 +7470,8 @@ MonoBehaviour:
   _isHighlight: 0
   _countMesh: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   _materialsList: {fileID: 1070381869}
+  _highlightColor: {r: 0, g: 0, b: 0, a: 1}
+  _defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!33 &933231787983362571
 MeshFilter:
   m_ObjectHideFlags: 0
